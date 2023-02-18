@@ -513,10 +513,11 @@ input:focus {
 
 /*********************************************BASIC CSS END HERE*********************************************************/
 .header {
-  left: 0px;
-  top: 0px;
   background-color: var(--main_color_one);
-  position: relative;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }
 .header .header__marquee-wrapper {
   height: 28px;
@@ -615,11 +616,14 @@ input:focus {
     font-size: 12px !important;
     line-height: 18px !important;
   }
+  .header {
+    position: fixed;
+  }
   .header .header__menu-wrapper {
     display: none;
   }
   .header .header__responsive {
-    height: 59px;
+    height: 64px;
     background: #FFFFFF;
     box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -667,8 +671,15 @@ input:focus {
     font-size: 22px;
     margin: 8px 0px;
   }
+  .header .header__responsive .header__responsive_menu_more ul li .responsive_anchor {
+    color: var(--menu_color) !important;
+  }
   .header .header__responsive .header__responsive_menu_more.active {
     right: 0;
+  }
+  .custom_jumbotron {
+    height: 356px !important;
+    padding-top: 92px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -689,4 +700,128 @@ input:focus {
   .regular_text_four {
     font-size: 10px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+  .main_btn {
+    font-size: 8px !important;
+    line-height: 16px !important;
+  }
+}
+/*********************************************jumbrotron css start*********************************************************/
+.custom_jumbotron {
+  height: auto;
+  min-height: 264px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1200px;
+  position: relative;
+}
+.custom_jumbotron .custom_jumbotron__wrapper {
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .image_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.custom_jumbotron .custom_jumbotron__wrapper img {
+  width: 50%;
+  height: 100%;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container {
+  position: relative;
+  z-index: 0;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container img {
+  height: 50%;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container input {
+  width: 427px;
+  height: 40px;
+  padding: 20px;
+  background: var(--p_color_four);
+  box-shadow: 0px 6px 10px 5px rgba(169, 159, 159, 0.14);
+  border: 0px solid var(--placeholder_color);
+  color: var(--placeholder_color);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 50px 0px 0px 50px;
+  padding-left: 55px;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper button {
+  width: 134.5px;
+  height: 40px;
+  left: 865.92px;
+  top: 248px;
+  color: var(--p_color_four);
+  background: var(--main_color_one);
+  border-radius: 0px 50px 50px 0px;
+  margin-left: -3px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper button:hover {
+  background-color: var(--main_color_one_hover);
+  color: var(--p_color_three);
+}
+
+@media only screen and (min-width: 701px) and (max-width: 767px) {
+  .searchbar_wrapper .input_container input {
+    width: 400px !important;
+    font-size: 10px !important;
+  }
+  .searchbar_wrapper button {
+    font-weight: 500 !important;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .searchbar_wrapper .input_container input {
+    width: 370px !important;
+    font-size: 10px !important;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 500px) {
+  .searchbar_wrapper .input_container input {
+    width: 340px !important;
+  }
+}
+@media only screen and (min-width: 416px) and (max-width: 480px) {
+  .searchbar_wrapper .input_container input {
+    width: 330px !important;
+    font-size: 10px !important;
+  }
+  .searchbar_wrapper button {
+    width: 77px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 415px) {
+  .searchbar_wrapper .input_container input {
+    width: 287px !important;
+    font-size: 11px !important;
+  }
+  .searchbar_wrapper button {
+    width: 77px !important;
+  }
+}
+@media (max-width: 374px) {
+  .searchbar_wrapper .input_container input {
+    width: 255px !important;
+    font-size: 8px !important;
+  }
+  .searchbar_wrapper button {
+    width: 60px !important;
+    font-size: 10px !important;
+  }
+}
+/*********************************************jumbrotron css end*********************************************************//*# sourceMappingURL=style.css.map */
