@@ -175,7 +175,7 @@ ul {
     height: 100%;
     margin: 0px auto;
     transition: all 300ms ease-in-out;
-    background-color: yellow;
+    // background-color: yellow;
 }
 
 .wrapper_inner {
@@ -191,7 +191,6 @@ ul {
     }
 
     .wrapper_inner {
-        background-color: red;
         margin: 0px auto;
         width: 95% !important;
     }
@@ -1484,7 +1483,7 @@ custom-nav {
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF !important;
-        background-color: red !important;
+        // background-color: red !important;
 
         .product_box_wrapper {
             display: flex;
@@ -1637,7 +1636,8 @@ custom-nav {
         }
     }
 }
-@media only screen and (max-width: 376px){
+
+@media only screen and (max-width: 376px) {
     .product_container {
         .product_container__wrapper {
             display: flex;
@@ -1665,6 +1665,257 @@ custom-nav {
     }
 
 }
+
 /*********************************************our product section csss end*********************************************************/
 
 
+
+
+/*********************************************market indicator section csss start*********************************************************/
+.market_indicator {
+    margin-top: 22px;
+    height: auto;
+    min-height: 685px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: var(--p_color_four);
+
+
+    .market_indicator__wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1.3fr;
+        grid-column-gap: 22px;
+        padding-top: 22px;
+        padding-bottom: 30px;
+
+        .market_indicator__section {
+            .market_indicator__header {
+                // height: auto;
+                // min-height: 73px;
+                height: 73px;
+
+                .description_info {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .market_indicator__body {
+                background: #FFFCFC;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                height: auto;
+                min-height: 543px;
+                width: 100%;
+                margin-top: 20px;
+
+                .nav {
+                    padding-top: 10px;
+
+                    .nav-item {
+                        .nav-link.active {
+                            background-color: var(--p_color_four);
+                            box-shadow: none !important;
+                            border: 0px;
+                            border-bottom: 2px solid var(--button_color) !important;
+                        }
+                    }
+                }
+
+                .table_indicator {
+                    // padding: 15px;
+
+                    .market_indicator__table {
+                        width: 100%;
+                        height: 100%;
+
+                        thead tr td {
+                            letter-spacing: .5px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            text-align: center;
+                            color: var(--table_color);
+                            padding: 12px;
+                        }
+
+                        tbody tr td {
+                            padding: 12px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            text-align: center;
+                            color: var(--table_color);
+                        }
+                    }
+                }
+
+                .table-content {
+                    .tab-pane {
+                        // display: block;
+                        overflow-x: auto;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .market_indicator__valuation {
+            position: relative;
+
+            .valuation_header {
+                height: 73px;
+                // min-height: 73px;
+            }
+
+            .valuation_body {
+                background: #FFFCFC;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                height: auto;
+                min-height: 543px;
+                width: 100%;
+                margin-top: 20px;
+
+                .nav {
+                    padding-top: 10px;
+
+                    .nav-item:hover {
+                        box-shadow: none !important;
+                        border: 0px solid #fff !important;
+                    }
+
+                    .nav-item {
+                        .nav-link.active {
+                            background-color: var(--p_color_four);
+                            box-shadow: none !important;
+                            border: 0px;
+                            border-bottom: 2px solid var(--button_color) !important;
+                        }
+                    }
+                }
+
+                .nav-tabs {
+                    border-bottom: 3px solid #215EAC;
+                }
+
+                ul li {
+                    cursor: pointer;
+                }
+
+                .valuation__table {
+                    height: 100%;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0 10px;
+                    padding: 10px;
+
+                    thead tr td {
+                        letter-spacing: .5px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: var(--chart_color);
+                    }
+
+                    tbody tr {
+                        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.32);
+                        cursor: pointer;
+                        transition: all 400ms ease-in-out;
+                        opacity: 0.9;
+                    }
+
+                    tbody tr:hover {
+                        // background-color: red !important;
+                        transform: scale(1.01);
+                        opacity: 1;
+                    }
+
+                    tbody tr td {
+                        padding: 5px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-align: center;
+                        color: var(--table_color);
+                    }
+
+                    tbody>tr>td:last-of-type {
+                        color: #7C7F8A;
+                        filter: blur(6px);
+                    }
+                }
+            }
+
+            .button_wrapper {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                flex-grow: 1;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1006px) {
+
+    .market_indicator {
+
+        .wrapper {
+            width: 100% !important;
+        }
+
+        .market_indicator__wrapper {
+            padding-top: 0px !important;
+            .market_indicator__section {
+                background: #FFFFFF;
+                padding-top: 20px;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+                // background-color: red !important;
+                .market_indicator__body {
+                    box-shadow: none;
+                }
+            }
+
+            .market_indicator__valuation {
+                background: #FFFFFF;
+                margin-top: 14px;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+                .valuation_body {
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+
+    .market_indicator {
+        margin-top: 22px;
+        height: auto;
+        min-height: 685px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        background-color: var(--p_color_four);
+
+
+        .market_indicator__wrapper {
+            display: flex !important;
+            flex-direction: column;
+        }
+    }
+}
+
+
+/*********************************************market indicator section csss end*********************************************************/
