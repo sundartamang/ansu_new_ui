@@ -1894,10 +1894,8 @@ custom-nav .owl-next i {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin-top: 10px;
-  background-color: purple !important;
-}
-.sentiment .sentiment_wrapper {
-  background-color: pink;
+  padding-bottom: 30px;
+  background-color: #0CF440;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__header {
   height: auto;
@@ -1913,12 +1911,183 @@ custom-nav .owl-next i {
        column-gap: 22px;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood {
-  height: 500px;
-  width: 100%;
-  background-color: green;
+  height: auto;
+  min-height: 380px;
+  background: #FDFDFD;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__header {
+  margin-top: 20px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment {
-  height: 500px;
-  width: 100%;
-  background-color: #215EAC;
+  height: auto;
+  min-height: 380px;
+  background: #FDFDFD;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body {
+  margin-top: 24px;
+  padding: 0px 22px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #535457;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #45484D;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body p span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #252726;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body .sentiment_button_container {
+  margin-top: 30px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body .sentiment_button_container h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #757272;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body .sentiment_button_container .sentiment_button_Wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer {
+  margin-top: 55px;
+  padding: 0px 22px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  color: #7C7C7C;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer input {
+  background: #FEFEFE;
+  border-bottom: 0.2px solid #0D257A;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  height: 24.85px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 14px;
+  color: #A49D9D;
+  padding: 4px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer button {
+  background: #091734;
+  border-radius: 3px;
+  width: 111.23px;
+  height: 23.67px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--p_color_four);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  opacity: 0.9;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer button:hover {
+  background-color: #050d1e;
+  opacity: 1;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+@media only screen and (max-width: 1059px) {
+  .sentiment .wrapper {
+    width: 100% !important;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__header {
+    width: 95%;
+    margin: 0px auto;
+  }
+  .sentiment .sentiment_wrapper {
+    background-color: grey !important;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__header {
+    width: 95%;
+    margin: 0px auto;
+    background-color: orange;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__body {
+    width: 95%;
+    margin: 0px auto;
+    background-color: orange;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment {
+    margin-top: 10px;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__header {
+    width: 95%;
+    margin: 0px auto;
+    background-color: orange;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body {
+    width: 95%;
+    margin: 0px auto;
+    background-color: orange;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer {
+    width: 95%;
+    margin: 0px auto;
+    background-color: orange;
+  }
 }/*# sourceMappingURL=style.css.map */
