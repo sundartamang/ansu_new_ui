@@ -1161,6 +1161,7 @@ custom-nav .owl-next i {
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF !important;
+  background-color: red !important;
 }
 .product_container .product_container__wrapper .product_box_wrapper {
   display: flex;
@@ -1235,7 +1236,7 @@ custom-nav .owl-next i {
     grid-column-end: 3;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .product_container .product_container__wrapper {
     display: flex;
     flex-direction: column;
@@ -1265,186 +1266,23 @@ custom-nav .owl-next i {
     height: 99px !important;
   }
 }
-/*********************************************our product section csss end*********************************************************/
-/*********************************************market indicator section csss start*********************************************************/
-.market_indicator {
-  margin-top: 22px;
-  height: auto;
-  min-height: 685px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  background-color: var(--p_color_four);
-  margin-bottom: 900px;
-}
-.market_indicator .market_indicator__wrapper {
-  display: grid;
-  grid-template-columns: 2.7fr 1.3fr;
-  grid-column-gap: 22px;
-  padding-top: 22px;
-  padding-bottom: 30px;
-  height: auto;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__header {
-  height: 73px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__header .description_info {
-  display: flex;
-  justify-content: space-between;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body {
-  background: #FFFCFC;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  height: auto;
-  min-height: 543px;
-  margin-top: 20px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .nav {
-  padding-top: 10px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .nav .nav-item .nav-link.active {
-  background-color: var(--p_color_four);
-  box-shadow: none !important;
-  border: 0px;
-  border-bottom: 2px solid var(--button_color) !important;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .table_indicator .market_indicator__table {
-  height: 100%;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .table_indicator .market_indicator__table thead tr td {
-  letter-spacing: 0.5px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: var(--table_color);
-  padding: 12px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .table_indicator .market_indicator__table tbody tr td {
-  padding: 12px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: var(--table_color);
-}
-.market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body .table-content .tab-pane {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation {
-  position: relative;
-  height: auto;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_header {
-  height: 73px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body {
-  background: #FFFCFC;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  height: auto;
-  min-height: 543px;
-  margin-top: 20px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .nav {
-  padding-top: 10px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .nav .nav-item:hover {
-  box-shadow: none !important;
-  border: 0px solid #fff !important;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .nav .nav-item .nav-link.active {
-  background-color: var(--p_color_four);
-  box-shadow: none !important;
-  border: 0px;
-  border-bottom: 2px solid var(--button_color) !important;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .nav-tabs {
-  border-bottom: 3px solid #215EAC;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body ul li {
-  cursor: pointer;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table {
-  height: 100%;
-  border-collapse: separate;
-  border-spacing: 0 10px;
-  padding: 10px;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table thead tr td {
-  letter-spacing: 0.5px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  color: var(--chart_color);
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.32);
-  cursor: pointer;
-  transition: all 400ms ease-in-out;
-  opacity: 0.9;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr:hover {
-  transform: scale(1.01);
-  opacity: 1;
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr td {
-  padding: 5px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: var(--table_color);
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody > tr > td:last-of-type {
-  color: #7C7F8A;
-  filter: blur(6px);
-}
-.market_indicator .market_indicator__wrapper .market_indicator__valuation .button_wrapper {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  align-self: flex-end;
-}
-
-@media only screen and (max-width: 991px) {
-  .market_indicator .market_indicator__wrapper {
-    display: grid;
-    grid-template-columns: 4fr;
+@media only screen and (max-width: 376px) {
+  .product_container .product_container__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .market_indicator .wrapper {
+  .product_container .product_container__wrapper .product_box_wrapper {
+    margin-top: 39px;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    place-items: center !important;
   }
-  .market_indicator .wrapper .market_indicator__section {
-    background: var(--p_color_four) !important;
-  }
-  .market_indicator .wrapper .market_indicator__section .market_indicator__body {
-    box-shadow: none;
-    background-color: pink !important;
-  }
-  .market_indicator .wrapper .market_indicator__valuation {
-    margin-top: 14px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-    background: var(--p_color_four) !important;
-  }
-  .market_indicator .wrapper .market_indicator__valuation .valuation_body {
-    box-shadow: none;
+  .product_container .product_container__wrapper .product_box_wrapper .product_box {
+    width: 103px !important;
+    height: 99px !important;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 1199px) {
-  .market_indicator .market_indicator__wrapper .market_indicator__wrapper_row .market_indicator__wrapper_column_right .market_indicator__valuation {
-    margin-top: 14px;
-  }
-}
-/*********************************************market indicator section csss end*********************************************************//*# sourceMappingURL=style.css.map */
+/*********************************************our product section csss end*********************************************************//*# sourceMappingURL=style.css.map */
