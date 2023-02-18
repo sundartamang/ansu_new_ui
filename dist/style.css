@@ -173,7 +173,6 @@ ul {
   height: 100%;
   margin: 0px auto;
   transition: all 300ms ease-in-out;
-  background-color: yellow;
 }
 
 .wrapper_inner {
@@ -1750,7 +1749,7 @@ custom-nav .owl-next i {
 }
 .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .agm_svm {
   margin-top: 30px;
-  border-radius: 10px;
+  border-radius: 10px !important;
   position: relative;
 }
 
@@ -1825,9 +1824,11 @@ custom-nav .owl-next i {
     margin: 0px auto;
   }
   .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .dividends {
+    margin-top: 30px;
     width: 95%;
   }
   .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .agm_svm {
+    margin-top: 30px;
     width: 95%;
   }
 }
@@ -1895,7 +1896,6 @@ custom-nav .owl-next i {
   border-radius: 5px;
   margin-top: 10px;
   padding-bottom: 30px;
-  background-color: #0CF440;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__header {
   height: auto;
@@ -1927,6 +1927,9 @@ custom-nav .owl-next i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__body .sentiment_mood__img img {
+  max-height: 200px;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment {
   height: auto;
@@ -1986,6 +1989,8 @@ custom-nav .owl-next i {
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer {
   margin-top: 55px;
   padding: 0px 22px;
+  display: flex;
+  flex-direction: column;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer p {
   font-family: "Poppins";
@@ -2039,55 +2044,36 @@ custom-nav .owl-next i {
 }
 
 @media only screen and (max-width: 1059px) {
-  .sentiment .wrapper {
-    width: 100% !important;
-  }
   .sentiment .sentiment_wrapper .sentiment_wrapper__header {
     width: 95%;
     margin: 0px auto;
-  }
-  .sentiment .sentiment_wrapper {
-    background-color: grey !important;
   }
   .sentiment .sentiment_wrapper .sentiment_wrapper__body {
     display: flex;
     flex-direction: column !important;
   }
   .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood {
-    background-color: red;
     height: 50px;
     width: 100%;
-    box-shadow: none !important;
-    border-radius: 0px !important;
-  }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__header {
-    width: 95%;
-    margin: 0px auto;
-    background-color: orange;
-  }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__body {
-    width: 95%;
-    margin: 0px auto;
-    background-color: orange;
+    background: #FDFDFD;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
   }
   .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment {
     margin-top: 10px;
-    box-shadow: none !important;
-    border-radius: 0px !important;
   }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__header {
-    width: 95%;
-    margin: 0px auto;
-    background-color: orange;
+}
+@media only screen and (max-width: 420px) {
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body {
+    padding: 10px 0px;
   }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__body {
-    width: 95%;
-    margin: 0px auto;
-    background-color: orange;
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form {
+    display: flex;
+    flex-direction: column;
   }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer {
-    width: 95%;
-    margin: 0px auto;
-    background-color: orange;
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form input, .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form button {
+    margin: 10px 0px;
+  }
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form button {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
