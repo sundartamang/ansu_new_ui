@@ -175,14 +175,29 @@ ul {
     height: 100%;
     margin: 0px auto;
     transition: all 300ms ease-in-out;
-    // background-color: yellow;
+    background-color: yellow;
+}
+
+.wrapper_inner {
+    width: 85%;
+    height: 100%;
+    margin: 0px auto;
+    transition: all 300ms ease-in-out;
 }
 
 @media (max-width: 1536px) {
     .wrapper {
-        width: 95%;
+        width: 95% !important;
+    }
+
+    .wrapper_inner {
+        background-color: red;
+        margin: 0px auto;
+        width: 95% !important;
     }
 }
+
+
 
 
 textarea {
@@ -541,12 +556,102 @@ input {
     right: -20px;
 }
 
+/*****owl carousel css start*****/
+.owl-item {
+    box-shadow: 0;
+    transition: 1s all;
+    webkit-transition: 1s all;
+}
 
+.owl-item.active {
+    box-shadow: 0 0 14px 0 rgba(74, 74, 74, 0.20);
+}
 
-@media (max-width: 768px) {}
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
 
-@media (max-width: 425) {}
+    span {
+        font-size: 32px;
+        color: #3F434A;
+    }
+}
 
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+
+    span {
+        font-size: 32px;
+        color: #3F434A;
+    }
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav {
+    top: 40%;
+
+    .owl-prev {
+        top: 23%;
+        left: 3%;
+    }
+
+    .owl-next {
+        top: 23%;
+        right: 3%;
+    }
+
+    button {
+        background-color: #fff;
+        border: 0px !important;
+        cursor: pointer;
+        outline: none !important;
+    }
+}
+
+custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+
+    .owl-prev {
+        position: absolute;
+        height: 100px;
+        color: inherit;
+        background: none;
+        border: none;
+        z-index: 100;
+        left: 0;
+
+        i {
+            font-size: 2.5rem;
+            color: #cecece;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        height: 100px;
+        color: inherit;
+        background: none;
+        border: none;
+        z-index: 100;
+        right: 0;
+
+        i {
+            font-size: 2.5rem;
+            color: #cecece;
+        }
+    }
+}
+
+/*****owl carousel css end*****/
 
 
 /*********************************************BASIC CSS END HERE*********************************************************/
@@ -831,7 +936,6 @@ input {
     // background: url('../img/jumboturn.png') repeat, rgba(255, 255, 255, 0.3);
     display: grid;
     place-items: center;
-    margin-bottom: 1200px;
     position: relative;
     // padding-top: 92px;
 
@@ -994,3 +1098,811 @@ input {
 }
 
 /*********************************************jumbrotron css end*********************************************************/
+
+
+
+
+/*********************************************Research and opinion section csss start*********************************************************/
+.research {
+    height: auto;
+    min-height: 531px;
+    left: 0px;
+    top: 356px;
+    background: var(--p_color_four);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.research__wrapper {
+    // background-color: red !important;
+
+    .research__wrapper_row {
+        // background-color: red !important;
+        height: 100%;
+        width: 100%;
+
+        .research__wrapper_column_left {
+            height: 100%;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+
+            .crasoul_wrapper {
+                width: 100%;
+
+                .crasoul_wrapper__header {
+                    height: auto;
+                    min-height: 73px;
+                    // height: 73px;
+
+                    .description_info {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .view_all {
+                            cursor: pointer;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+
+                .crasoul_wrapper__body {
+                    display: grid;
+                    // grid-column-gap: 30px;
+                    // column-gap: 30px;
+                    // padding-left: 40px;
+                    // padding-right: 40px;
+                    // padding-left: 20px;
+                    // padding-right: 20px;
+                    margin-top: 28px;
+                    height: auto;
+                    min-height: 401px;
+
+                    .owl-stage-outer {
+                        .owl-stage {
+                            .owl-item {
+                                border-radius: 10px !important;
+                            }
+                        }
+                    }
+
+
+
+                    .owl-nav {
+                        top: 40%;
+
+                        .owl-prev {
+                            top: 30%;
+                            left: -20px;
+                        }
+
+                        .owl-next {
+                            top: 30%;
+                            right: -20px;
+                        }
+
+                        button {
+                            background-color: #fff;
+                            border: 0px !important;
+                            cursor: pointer;
+                            outline: none !important;
+                        }
+                    }
+
+                    .item {
+                        border-radius: 10px;
+                        height: 100%;
+                        border: 1px solid rgb(74 74 74 / 20%);
+
+                        img {
+                            height: 133px;
+                            border-radius: 10px 10px 0px 0px;
+                        }
+
+                        .owl-carousel__body {
+                            padding: 15px 15px 0px 15px;
+                            height: auto;
+                            min-height: 100px;
+
+                            .button_wrapper {
+                                position: relative;
+                                margin-top: 25px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-end;
+                            }
+
+                            .read_more_btn {
+                                margin-top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .research__wrapper_column_right {
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .market_wrapper {
+                width: 100%;
+
+                .market_wrapper__header {
+                    // height: auto;
+                    // min-height: 73px;
+                    height: 73px;
+                }
+
+                .market_wrapper__body {
+                    margin-top: 39px;
+                    // margin-top: 20px;
+                    // height: auto;
+                    // min-height: 401px;
+                    height: 100%;
+                    border-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    box-shadow: 0 0 14px 0 rgb(74 74 74 / 20%);
+                    border: 1px solid rgb(74 74 74 / 20%);
+
+                    .item {
+                        // height: auto;
+                        // min-height: 401px;
+                        height: 100%;
+                        width: 100%;
+
+                        .chart_header_wrapper {
+
+                            .nav-tabs {
+                                .nav-item {
+                                    padding-bottom: 0;
+
+                                    .nav-link {
+                                        display: block;
+                                        padding: 0px;
+                                        border: 0;
+                                        position: relative;
+                                        text-transform: capitalize;
+                                        letter-spacing: .5px;
+                                        padding: 0.5rem 0.8rem;
+                                        color: #4F4F4F;
+                                        -webkit-transition: all 300ms ease-in-out;
+                                        transition: all 300ms ease-in-out;
+                                    }
+                                }
+                            }
+
+                            .nav-link.active {
+                                background-color: var(--p_color_four);
+                                box-shadow: none !important;
+                                border: 0px;
+                                border-bottom: 2px solid var(--button_color) !important;
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+
+                            li {
+                                padding-top: 10px;
+
+                                a {
+                                    color: var(--button_color);
+                                }
+                            }
+                        }
+
+                        .chart_body_wrapper {
+                            .item {
+                                padding: 15px;
+                                border-radius: 0px;
+
+                                .table-content {
+                                    .tab-pane.active {
+                                        box-shadow: none !important;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1619px) and (max-width: 1808px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 3px !important;
+                        padding-right: 3px !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 991px)and (max-width: 1808px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 2px !important;
+                        padding-right: 2px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 787px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 5px !important;
+                        padding-right: 5px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 755px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 0px !important;
+                        padding-right: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 394px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 5px !important;
+                        padding-right: 5px !important;
+                        font-size: 13px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*********************************************Responsive news section end*********************************************************/
+
+
+
+/*********************************************Responsive news section start*********************************************************/
+// for news wrapper
+.responsive_news {
+    display: none;
+    padding-top: 20px;
+
+    .responsive_news__header {
+        height: 73px !important;
+    }
+
+    .responsive_news__body {
+        margin-top: 39px;
+        box-shadow: 0 0 14px 0 rgb(74 74 74 / 20%);
+
+
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-stage {
+                    border-radius: 15px;
+
+                    .owl-item {
+
+                        .item {
+                            .owl-carousel__body {
+                                padding: 15px 15px 0px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .responsive_news {
+        display: block;
+
+        .responsive_news_wrapper {}
+    }
+}
+
+/*********************************************Responsive news section end*********************************************************/
+
+
+
+/*********************************************our product section csss start*********************************************************/
+.product_container {
+    height: auto;
+    min-height: 150px;
+    margin-top: 22px;
+    background-color: var(--p_color_four);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+    .product_container__wrapper {
+        display: grid;
+        grid-template-columns: 25% 4fr;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF !important;
+
+        .product_box_wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product_box {
+            width: 130px;
+            height: 110px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #FFFDFD;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+            // opacity: 0.9;
+
+            .icon_title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: var(--icon_p_color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+        }
+
+        .product_box:hover {
+            // transform: scale(1.02);
+            // opacity: 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1152px) {
+    .product_container {
+        .product_container__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .product_title_wrapper {
+                padding-top: 31px;
+                width: 100%;
+                display: flex;
+                align-items: center !important;
+                justify-content: center !important;
+
+                p,
+                h4 {
+                    text-align: center;
+                }
+            }
+
+            .product_box_wrapper {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 764px) and (max-width: 868px) {
+    .product_container {
+        .product_container__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .product_box_wrapper {
+                margin-top: 39px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                row-gap: 25px;
+                place-items: center !important;
+                grid-template-rows: auto !important;
+                align-items: center;
+
+                .product_box {
+
+                    &:last-child:nth-child(4n - 1) {
+                        grid-column-end: -1;
+                    }
+
+                    &:nth-last-child(2):nth-child(4n + 1) {
+                        grid-column-end: 3;
+                    }
+
+                }
+
+
+
+
+            }
+
+            // .product_box::nth-child(lastchild) {
+            //     grid-column: 2/3;
+            // }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .product_container {
+        .product_container__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .product_title_wrapper {
+                padding-top: 31px;
+                width: 100%;
+                display: flex;
+                align-items: center !important;
+                justify-content: center !important;
+
+                p,
+                h4 {
+                    text-align: center;
+                }
+            }
+
+            .product_box_wrapper {
+                margin-top: 39px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 25px;
+                place-items: center !important;
+
+
+                .product_box {
+                    width: 117px !important;
+                    height: 99px !important;
+                }
+
+            }
+
+        }
+    }
+}
+
+/*********************************************our product section csss end*********************************************************/
+
+
+
+/*********************************************market indicator section csss start*********************************************************/
+.market_indicator {
+    margin-top: 22px;
+    height: auto;
+    min-height: 685px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: var(--p_color_four);
+    margin-bottom: 900px;
+
+
+    .market_indicator__wrapper {
+        display: grid;
+        grid-template-columns: 2.7fr 1.3fr;
+        grid-column-gap: 22px;
+        padding-top: 22px;
+        padding-bottom: 30px;
+        height: auto;
+
+
+        .market_indicator__section {
+            .market_indicator__header {
+                // height: auto;
+                // min-height: 73px;
+                height: 73px;
+
+                .description_info {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .market_indicator__body {
+                background: #FFFCFC;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                height: auto;
+                min-height: 543px;
+                // width: 100%;
+                margin-top: 20px;
+
+                .nav {
+                    padding-top: 10px;
+
+                    .nav-item {
+                        .nav-link.active {
+                            background-color: var(--p_color_four);
+                            box-shadow: none !important;
+                            border: 0px;
+                            border-bottom: 2px solid var(--button_color) !important;
+                        }
+                    }
+                }
+
+                .table_indicator {
+                    // padding: 15px;
+
+                    .market_indicator__table {
+                        // width: 100%;
+                        height: 100%;
+
+                        thead tr td {
+                            letter-spacing: .5px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            text-align: center;
+                            color: var(--table_color);
+                            padding: 12px;
+                        }
+
+                        tbody tr td {
+                            padding: 12px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            text-align: center;
+                            color: var(--table_color);
+                        }
+                    }
+                }
+
+                .table-content {
+                    .tab-pane {
+                        // display: block;
+                        overflow-x: auto;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .market_indicator__valuation {
+            position: relative;
+            height: auto;
+
+            .valuation_header {
+                height: 73px;
+                // min-height: 73px;
+            }
+
+            .valuation_body {
+                background: #FFFCFC;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                height: auto;
+                min-height: 543px;
+                // width: 100%;
+                margin-top: 20px;
+
+                .nav {
+                    padding-top: 10px;
+
+                    .nav-item:hover {
+                        box-shadow: none !important;
+                        border: 0px solid #fff !important;
+                    }
+
+                    .nav-item {
+                        .nav-link.active {
+                            background-color: var(--p_color_four);
+                            box-shadow: none !important;
+                            border: 0px;
+                            border-bottom: 2px solid var(--button_color) !important;
+                        }
+                    }
+                }
+
+                .nav-tabs {
+                    border-bottom: 3px solid #215EAC;
+                }
+
+                ul li {
+                    cursor: pointer;
+                }
+
+                .valuation__table {
+                    height: 100%;
+                    // width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0 10px;
+                    padding: 10px;
+
+                    thead tr td {
+                        letter-spacing: .5px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: var(--chart_color);
+                    }
+
+                    tbody tr {
+                        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.32);
+                        cursor: pointer;
+                        transition: all 400ms ease-in-out;
+                        opacity: 0.9;
+                    }
+
+                    tbody tr:hover {
+                        // background-color: red !important;
+                        transform: scale(1.01);
+                        opacity: 1;
+                    }
+
+                    tbody tr td {
+                        padding: 5px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-align: center;
+                        color: var(--table_color);
+                    }
+
+                    tbody>tr>td:last-of-type {
+                        color: #7C7F8A;
+                        filter: blur(6px);
+                    }
+                }
+            }
+
+            .button_wrapper {
+                position: absolute;
+                // width: 100%;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                flex-grow: 1;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .market_indicator {
+
+        .market_indicator__wrapper {
+            display: grid;
+            grid-template-columns: 4fr
+        }
+
+        .wrapper {
+            width: 100%;
+
+            .market_indicator__section {
+                // box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+                background: var(--p_color_four) !important;
+
+
+                .market_indicator__body {
+                    box-shadow: none;
+                    background-color: pink !important;
+                }
+            }
+
+            .market_indicator__valuation {
+                margin-top: 14px;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+                background: var(--p_color_four) !important;
+
+                .valuation_body {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+    .market_indicator {
+
+        .market_indicator__wrapper {
+
+            .market_indicator__wrapper_row {
+
+                .market_indicator__wrapper_column_left {
+                    .market_indicator__section {
+                        // background: #FFFFFF !important;
+                        // box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15) !important;
+                    }
+                }
+
+                .market_indicator__wrapper_column_right {
+
+                    .market_indicator__valuation {
+                        margin-top: 14px;
+                        // background: #FFFFFF !important;
+                        // box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********************************************market indicator section csss end*********************************************************/

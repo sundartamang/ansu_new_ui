@@ -28,13 +28,13 @@ $(function () {
     }
   });
 
-  // var corporateNewsOwl = $("#corporatenewsOwlCarousel");
-  // corporateNewsOwl.owlCarousel({
-  //     items: 2,
-  //     loop: false,
-  //     nav: false,
+  var corporateNewsOwl = $("#corporatenewsOwlCarousel");
+  corporateNewsOwl.owlCarousel({
+      items: 2,
+      loop: false,
+      nav: false,
 
-  // });
+  });
 
 
 
@@ -95,22 +95,6 @@ $(function () {
 
 });
 
-// $(document).ready(function () {
-
-//     $("#researchOpinion").owlCarousel({
-//         loop: true,
-//         items: 3,
-//         margin: 30,
-//         nav: true,
-//     });
-
-
-//     // $('#newsCarousel').owlCarousel({
-//     // });
-
-
-
-// });
 
 // let menu = document.querySelector('#menu-icon');
 // let hidden_nav = document.querySelector('.header__responsive_menu_more');
