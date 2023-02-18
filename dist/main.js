@@ -31,9 +31,8 @@ $(function () {
   var corporateNewsOwl = $("#corporatenewsOwlCarousel");
   corporateNewsOwl.owlCarousel({
       items: 2,
-      loop: false,
-      nav: false,
-
+      loop: true,
+      nav: true,
   });
 
 
