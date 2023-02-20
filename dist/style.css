@@ -1503,8 +1503,6 @@ custom-nav .owl-next i {
   margin-top: 10px;
 }
 .compantion_container .compantion_container__wrapper {
-  padding-left: 15px;
-  padding-right: 15px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   -moz-column-gap: 16px;
@@ -1888,4 +1886,39 @@ custom-nav .owl-next i {
     display: none;
   }
 }
-/**********************************subscriber portfolio section css end**********************************************//*# sourceMappingURL=style.css.map */
+/**********************************subscriber portfolio section css end**********************************************/
+.sentiment {
+  height: auto;
+  min-height: 540px;
+  background: #FDFDFD;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: purple !important;
+}
+.sentiment .sentiment_wrapper {
+  background-color: pink;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__header {
+  height: auto;
+  min-height: 73px;
+  padding-top: 30px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body {
+  margin-top: 40px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood {
+  height: 500px;
+  width: 100%;
+  background-color: green;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment {
+  height: 500px;
+  width: 100%;
+  background-color: #215EAC;
+}/*# sourceMappingURL=style.css.map */
