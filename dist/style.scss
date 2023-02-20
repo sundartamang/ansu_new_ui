@@ -512,6 +512,8 @@ input {
     justify-content: center;
     position: absolute;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .view_all {
@@ -1778,6 +1780,7 @@ custom-nav {
                 min-height: 543px;
                 width: 100%;
                 margin-top: 20px;
+                position: relative; //needed for button wrapper
 
                 .nav {
                     padding-top: 10px;
@@ -2070,7 +2073,6 @@ custom-nav {
 
 
 
-
 /*********************************************coroperate section css start*********************************************************/
 .coroperater {
     height: auto;
@@ -2079,205 +2081,15 @@ custom-nav {
     margin-top: 10px;
     padding-bottom: 30px;
     // position: relative;
-    background-color: red !important;
-
-
-    .coroperater__wrapper {
-        padding-top: 24px;
-        // display: grid;
-        // grid-template-columns: 2fr 2fr;
-        // column-gap: 15px;
-
-        .coroperater__left {
-            height: auto;
-            width: 100%;
-
-            .news_wrapper {
-                height: auto;
-                min-height: 375px;
-
-                .news_wrapper__header {
-                    height: auto;
-                    min-height: 73px;
-                }
-
-                .news_wrapper__body {
-                    margin-top: 15px;
-                    height: auto;
-                    min-height: 302px;
-                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-                    padding-left: 25px;
-                    padding-right: 25px;
-                    padding: 40px;
-
-                    .item {
-                        border-radius: 10px;
-                        height: 100%;
-
-                        img {
-                            height: 133px;
-                            border-radius: 10px 10px 0px 0px;
-                        }
-
-                        .owl-carousel__body {
-                            padding: 15px 15px 0px 15px;
-                            height: auto;
-                            min-height: 100px;
-
-                            .button_wrapper {
-                                position: relative;
-                                margin-top: 25px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: flex-end;
-                            }
-
-                            .read_more_btn {
-                                margin-top: 25px;
-                            }
-                        }
-                    }
-
-                    .owl-carousel {
-                        .owl-nav.disabled {
-                            display: block;
-
-                            .owl-prev {
-                                position: absolute;
-                                left: -20px;
-                            }
-
-                            .owl-next {
-                                position: absolute;
-                                right: -20px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .corperate_wrapper {
-                .corperate_wrapper__header {
-                    height: 73px;
-                    margin-top: 19px;
-                }
-
-                .corperate_wrapper__body {
-                    margin-top: 27px;
-                    height: 420px;
-                    background: var(--p_color_three);
-                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-                    border-radius: 10px;
-                    padding: 19px;
-
-                    .news_alert {
-                        height: 40px;
-                        background: #FDFDFD;
-                        margin-bottom: 20px;
-                        border-left: 3px solid #0A0955;
-                        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0px 14px;
-                        cursor: pointer;
-                        transition: all 400ms ease-in-out;
-                        opacity: 0.9;
-
-                        .news_alert__header {
-                            font-family: 'Poppins';
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 14px;
-                            line-height: 21px;
-                            color: #777373;
-                        }
-
-                        .news_alert__date {
-                            font-family: 'Poppins';
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 11px;
-                            line-height: 16px;
-                            color: #5B5959;
-                        }
-                    }
-
-                    .news_alert:hover {
-                        transform: scale(1.009);
-                        opacity: 1;
-                        font-weight: 600;
-                    }
-
-                }
-            }
-        }
-
-        .coroperater__right {
-            width: 100%;
-
-            .investing_wrapper {
-
-                .investing_wrapper__header {
-                    height: 73px;
-                    // min-height: 73px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .investing_wrapper__body {
-                    margin-top: 15px;
-                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-                    border-radius: 10px;
-                    height: 260px;
-                    position: relative;
-                }
-
-                .dividends {
-                    margin-top: 30px;
-                    border-radius: 10px;
-                    position: relative;
-                }
-
-                .agm_svm {
-                    margin-top: 30px;
-                    border-radius: 10px;
-                    position: relative;
-                }
-            }
-        }
-    }
-}
-
-
-@media only screen and (min-width: 320px) and (max-width: 1199px) {
-    .coroperater {
-        margin-top: 14px;
-    }
-}
-
-/*********************************************coroperate section css end*********************************************************/
-
-
-
-
-/*********************************************coroperate section css start*********************************************************/
-.coroperater {
-    height: auto;
-    min-height: 953px;
-    background: #FFFFFF;
-    margin-top: 10px;
-    padding-bottom: 30px;
-    // position: relative;
-    background-color: red !important;
+    // background-color: red !important;
 
 
     .coroperater__wrapper {
         padding-top: 24px;
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2.5fr 1.5fr;
         column-gap: 15px;
+        // background-color: orange;
 
         .coroperater__left {
             height: auto;
@@ -2286,10 +2098,12 @@ custom-nav {
             .news_wrapper {
                 height: auto;
                 min-height: 375px;
+                position: relative;
 
                 .news_wrapper__header {
                     height: auto;
                     min-height: 73px;
+                    // background-color: purple;
                 }
 
                 .news_wrapper__body {
@@ -2300,6 +2114,7 @@ custom-nav {
                     padding-left: 25px;
                     padding-right: 25px;
                     padding: 40px;
+                    position: relative; //needed for button
 
                     .item {
                         border-radius: 10px;
@@ -2348,6 +2163,8 @@ custom-nav {
             }
 
             .corperate_wrapper {
+                position: relative;
+
                 .corperate_wrapper__header {
                     height: 73px;
                     margin-top: 19px;
@@ -2360,6 +2177,7 @@ custom-nav {
                     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
                     border-radius: 10px;
                     padding: 19px;
+                    position: relative; //neneded for button
 
                     .news_alert {
                         height: 40px;
@@ -2406,6 +2224,7 @@ custom-nav {
 
         .coroperater__right {
             width: 100%;
+            // background-color: orange;
 
             .investing_wrapper {
 
@@ -2445,10 +2264,43 @@ custom-nav {
 @media only screen and (max-width: 1059px) {
     .coroperater {
         margin-top: 14px;
+
+        .wrapper {
+            width: 100% !important;
+        }
+
         .coroperater__wrapper {
-            background-color: orange !important;
+            // background-color: orange !important;
             display: flex;
             flex-direction: column !important;
+
+            .coroperater__left {
+                .corperate_wrapper {
+                    margin-top: 14px;
+                    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                    .corperate_wrapper__body{
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .coroperater__right {
+                // background-color: red !important;
+                margin-top: 14px;
+                background: #FFFFFF;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+                .investing_wrapper {
+                    // background-color: green !important;
+                    padding-top: 30px;
+
+
+                    .investing_wrapper__body{
+                        // box-shadow: none !important;
+                    }
+                }
+            }
         }
     }
 }
@@ -2456,6 +2308,8 @@ custom-nav {
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
     .coroperater {
         margin-top: 14px;
+
+
     }
 }
 

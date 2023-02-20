@@ -28,12 +28,12 @@ $(function () {
     }
   });
 
-  var corporateNewsOwl = $("#corporatenewsOwlCarousel");
-  corporateNewsOwl.owlCarousel({
-      items: 2,
-      loop: true,
-      nav: true,
-  });
+  // var corporateNewsOwl = $("#corporateNewsCarousel");
+  // corporateNewsOwl.owlCarousel({
+  //     items: 2,
+  //     loop: true,
+  //     nav: true,
+  // });
 
 
 
