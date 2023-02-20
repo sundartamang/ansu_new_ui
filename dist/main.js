@@ -28,13 +28,6 @@ $(function () {
     }
   });
 
-  // var corporateNewsOwl = $("#corporateNewsCarousel");
-  // corporateNewsOwl.owlCarousel({
-  //     items: 2,
-  //     loop: true,
-  //     nav: true,
-  // });
-
 
 
   var marketOwl = $("#marketOwlCarousel");
@@ -46,9 +39,6 @@ $(function () {
   });
 
 
-
-
-
   var newsOwlResponsive = $("#newsOwlCarouselRsponsive");
   newsOwlResponsive.owlCarousel({
     items: 1,
@@ -56,6 +46,15 @@ $(function () {
     loop: true,
     nav: true
   });
+
+  var newsCorporateOwl = $("#newsOwlCarousel");
+  newsCorporateOwl.owlCarousel({
+      items: 2,
+      margin: 30,
+      loop: true,
+      nav: true
+  });
+
 
   var galleryOwl = $("#gallery");
   galleryOwl.owlCarousel({

@@ -49,6 +49,11 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: #ebf5fe !important;
+  }
+}
 a {
   color: none;
   text-decoration: none;
@@ -168,6 +173,7 @@ ul {
   height: 100%;
   margin: 0px auto;
   transition: all 300ms ease-in-out;
+  background-color: yellow;
 }
 
 .wrapper_inner {
@@ -1452,16 +1458,29 @@ custom-nav .owl-next i {
     padding-top: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
   }
+  .market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__header {
+    background-color: red;
+    margin: 0px auto;
+    width: 95%;
+  }
   .market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__body {
     box-shadow: none;
+    width: 95%;
+    margin: 0px auto;
   }
   .market_indicator .market_indicator__wrapper .market_indicator__valuation {
     background: #FFFFFF;
     margin-top: 14px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
   }
+  .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_header {
+    width: 95%;
+    margin: 0px auto;
+  }
   .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body {
     box-shadow: none;
+    width: 95%;
+    margin: 0px auto;
   }
   .market_indicator {
     margin-top: 22px;
@@ -1602,15 +1621,14 @@ custom-nav .owl-next i {
   grid-template-columns: 2.5fr 1.5fr;
   -moz-column-gap: 15px;
        column-gap: 15px;
+  position: relative;
 }
 .coroperater .coroperater__wrapper .coroperater__left {
   height: auto;
-  width: 100%;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper {
   height: auto;
   min-height: 375px;
-  position: relative;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__header {
   height: auto;
@@ -1738,6 +1756,29 @@ custom-nav .owl-next i {
   position: relative;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coroperater .coroperater__wrapper .coroperater__left .news_wrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .coroperater .coroperater__wrapper .coroperater__left {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .coroperater .coroperater__wrapper .coroperater__left .news_wrapper {
+    margin-top: 14px;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .corperate_wrapper__body {
+    box-shadow: none;
+  }
+  .coroperater .coroperater__wrapper .coroperater__right {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1059px) {
   .coroperater {
     margin-top: 14px;
@@ -1749,12 +1790,25 @@ custom-nav .owl-next i {
     display: flex;
     flex-direction: column !important;
   }
+  .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__header {
+    width: 95%;
+    margin: 0px auto;
+  }
+  .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body {
+    width: 95%;
+    margin: 0px auto;
+  }
   .coroperater .coroperater__wrapper .coroperater__left .corperate_wrapper {
-    margin-top: 14px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .coroperater .coroperater__wrapper .coroperater__left .corperate_wrapper .corperate_wrapper__header {
+    width: 95%;
+    margin: 0px auto;
   }
   .coroperater .coroperater__wrapper .coroperater__left .corperate_wrapper .corperate_wrapper__body {
     box-shadow: none;
+    width: 95%;
+    margin: 0px auto;
   }
   .coroperater .coroperater__wrapper .coroperater__right {
     margin-top: 14px;
@@ -1764,10 +1818,74 @@ custom-nav .owl-next i {
   .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper {
     padding-top: 30px;
   }
+  .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .investing_wrapper__header {
+    width: 95%;
+    margin: 0px auto;
+  }
+  .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .investing_wrapper__body {
+    width: 95%;
+    margin: 0px auto;
+  }
+  .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .dividends {
+    width: 95%;
+  }
+  .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .agm_svm {
+    width: 95%;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
   .coroperater {
     margin-top: 14px;
   }
 }
-/*********************************************coroperate section css end*********************************************************//*# sourceMappingURL=style.css.map */
+/*********************************************coroperate section css end*********************************************************/
+/**********************************subscriber portfolio section css start**********************************************/
+.subscriber {
+  margin-top: 10px;
+  background: #091734;
+}
+.subscriber .subscriber_wrapper {
+  height: 163px;
+}
+.subscriber .subscriber_wrapper .subscriber_wrapper_row {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+.subscriber .subscriber_wrapper .subscriber_wrapper_row .subscriber_wrapper__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscriber .subscriber_wrapper .subscriber_wrapper_row .subscriber_wrapper__column h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--p_color_three);
+  border-left: 2.5px solid #FFAA06;
+  padding-left: 10px;
+  top: 50%;
+}
+.subscriber .subscriber_wrapper .subscriber_wrapper_row .subscriber_wrapper__column b {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #FFAA06;
+}
+.subscriber .subscriber_wrapper .subscriber_wrapper_row .subscriber_wrapper__column p b {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .subscriber {
+    display: none;
+  }
+}
+/**********************************subscriber portfolio section css end**********************************************//*# sourceMappingURL=style.css.map */

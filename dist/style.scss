@@ -50,6 +50,15 @@ body {
     overflow-x: hidden;
 }
 
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #ebf5fe !important;
+    }
+}
+
+
+
 a {
     color: none;
     text-decoration: none;
@@ -175,7 +184,7 @@ ul {
     height: 100%;
     margin: 0px auto;
     transition: all 300ms ease-in-out;
-    // background-color: yellow;
+    background-color: yellow;
 }
 
 .wrapper_inner {
@@ -1886,9 +1895,17 @@ custom-nav {
                 padding-top: 20px;
                 box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
 
+                .market_indicator__header {
+                    background-color: red;
+                    margin: 0px auto;
+                    width: 95%;
+                }
+
                 // background-color: red !important;
                 .market_indicator__body {
                     box-shadow: none;
+                    width: 95%;
+                    margin: 0px auto;
                 }
             }
 
@@ -1897,8 +1914,15 @@ custom-nav {
                 margin-top: 14px;
                 box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
 
+                .valuation_header {
+                    width: 95%;
+                    margin: 0px auto;
+                }
+
                 .valuation_body {
                     box-shadow: none;
+                    width: 95%;
+                    margin: 0px auto;
                 }
             }
         }
@@ -2089,16 +2113,18 @@ custom-nav {
         display: grid;
         grid-template-columns: 2.5fr 1.5fr;
         column-gap: 15px;
-        // background-color: orange;
+        position: relative;
 
         .coroperater__left {
             height: auto;
-            width: 100%;
+            // width: 50%;
+
 
             .news_wrapper {
                 height: auto;
                 min-height: 375px;
-                position: relative;
+                // position: relative;
+
 
                 .news_wrapper__header {
                     height: auto;
@@ -2164,6 +2190,7 @@ custom-nav {
 
             .corperate_wrapper {
                 position: relative;
+
 
                 .corperate_wrapper__header {
                     height: 73px;
@@ -2261,6 +2288,46 @@ custom-nav {
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .coroperater {
+        .coroperater__wrapper {
+            .coroperater__left {
+                .news_wrapper {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .coroperater {
+        .coroperater__wrapper {
+            .coroperater__left {
+                display: flex;
+                flex-direction: column-reverse !important;
+
+                .news_wrapper {
+                    margin-top: 14px;
+                    display: block;
+                    background: #FFFFFF;
+
+                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+                    .corperate_wrapper__body{
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .coroperater__right {
+                display: none;
+            }
+        }
+    }
+}
+
+
 @media only screen and (max-width: 1059px) {
     .coroperater {
         margin-top: 14px;
@@ -2275,12 +2342,32 @@ custom-nav {
             flex-direction: column !important;
 
             .coroperater__left {
+
+                .news_wrapper {
+                    .news_wrapper__header {
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+
+                    .news_wrapper__body {
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+                }
+
                 .corperate_wrapper {
-                    margin-top: 14px;
+                    // margin-top: 14px;
                     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 
-                    .corperate_wrapper__body{
+                    .corperate_wrapper__header {
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+
+                    .corperate_wrapper__body {
                         box-shadow: none;
+                        width: 95%;
+                        margin: 0px auto;
                     }
                 }
             }
@@ -2295,9 +2382,24 @@ custom-nav {
                     // background-color: green !important;
                     padding-top: 30px;
 
+                    .investing_wrapper__header {
+                        width: 95%;
+                        margin: 0px auto;
+                    }
 
-                    .investing_wrapper__body{
+
+                    .investing_wrapper__body {
                         // box-shadow: none !important;
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+
+                    .dividends {
+                        width: 95%;
+                    }
+
+                    .agm_svm {
+                        width: 95%;
                     }
                 }
             }
@@ -2314,3 +2416,67 @@ custom-nav {
 }
 
 /*********************************************coroperate section css end*********************************************************/
+
+
+
+/**********************************subscriber portfolio section css start**********************************************/
+.subscriber {
+    margin-top: 10px;
+    background: #091734;
+
+    .subscriber_wrapper {
+        height: 163px;
+
+        .subscriber_wrapper_row {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+
+            .subscriber_wrapper__column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h4 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 42px;
+                    color: var(--p_color_three);
+                    border-left: 2.5px solid #FFAA06;
+                    padding-left: 10px;
+                    top: 50%;
+                }
+
+                b {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 54px;
+                    text-align: center;
+                    color: #FFAA06;
+                }
+
+                p {
+                    // padding-top: 10px;
+
+                    b {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .subscriber {
+        display: none;
+    }
+}
+
+/**********************************subscriber portfolio section css end**********************************************/
