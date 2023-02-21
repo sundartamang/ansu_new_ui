@@ -1458,7 +1458,8 @@ custom-nav .owl-next i {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
   }
   .market_indicator .market_indicator__wrapper .market_indicator__section .market_indicator__header {
-    background-color: red;
+    height: auto !important;
+    min-height: 73px;
     margin: 0px auto;
     width: 95%;
   }
@@ -2070,7 +2071,8 @@ custom-nav .owl-next i {
     display: flex;
     flex-direction: column;
   }
-  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form input, .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form button {
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form input,
+  .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form button {
     margin: 10px 0px;
   }
   .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form button {
@@ -2079,12 +2081,14 @@ custom-nav .owl-next i {
 }
 /****************************************************************gallery section css start**************************************************************************************/
 .gallery {
-  height: 303px;
+  height: auto;
+  min-height: 303px;
   margin-top: 10px;
   background: #FDFDFD;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   position: relative;
+  padding-bottom: 40px;
 }
 .gallery .gallery_wrapper__header {
   padding-top: 30px;
@@ -2134,4 +2138,227 @@ custom-nav .owl-next i {
   width: none !important;
 }
 
-/****************************************************************gallery section css end**************************************************************************************//*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 768px) {
+  .gallery .gallery_wrapper__body {
+    height: 200px;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel {
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer {
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage {
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+    height: 100%;
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card {
+    display: flex !important;
+    flex-direction: row;
+    height: 100%;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body {
+    margin: auto;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card-text {
+    color: #504D4D !important;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body span {
+    float: right;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #3F3E3E;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper {
+    height: 100%;
+    position: relative;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper .card-text {
+    padding-left: 10% !important;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper img {
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    top: -4px;
+    left: -6px;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item.active.center .item {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-nav.disabled .owl-prev {
+    position: absolute;
+    left: -27px;
+  }
+  .gallery .gallery_wrapper__body .owl-carousel .owl-nav.disabled .owl-next {
+    position: absolute;
+    right: -27px;
+  }
+}
+/***************************************************gallery section css end*********************************************************************/
+/****************************************************************testimonail section css start**************************************************************************************/
+.testimonal {
+  margin-top: 10px;
+  height: auto;
+  min-height: 393px;
+  background: #FDFDFD;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-bottom: 40px;
+  margin-bottom: 300px;
+}
+.testimonal .testimoanl_wrapper {
+  position: relative;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__header {
+  height: 73px;
+  padding-top: 20px;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__header .description {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__header .description p {
+  cursor: pointer;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body {
+  margin-top: 40px;
+  height: 260px;
+  width: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel {
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer {
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+  height: 100%;
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card {
+  display: flex !important;
+  flex-direction: row;
+  height: 100%;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body {
+  margin: auto;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card-text {
+  color: #504D4D !important;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body span {
+  float: right;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #3F3E3E;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper {
+  height: 100%;
+  position: relative;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper .card-text {
+  padding-left: 10% !important;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .card .card-body .card_body_wrapper img {
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: -4px;
+  left: -7px;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-stage .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-nav.disabled .owl-prev {
+  position: absolute;
+  left: -27px;
+}
+.testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-nav.disabled .owl-next {
+  position: absolute;
+  right: -27px;
+}
+
+@media only screen and (max-width: 650px) {
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__header {
+    height: auto;
+    min-height: 73px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body {
+    height: 187px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .card-body .card_body_wrapper p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .card-body .card_body_wrapper span {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .v {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__header {
+    height: auto;
+    min-height: 73px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body {
+    height: 187px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .card-body {
+    padding: 10px !important;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .card-body .card_body_wrapper .testimonial_quote {
+    height: 20px !important;
+    width: 15px !important;
+    left: -8px !important;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .card-body .card_body_wrapper span {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  .testimonal .testimoanl_wrapper .testimoanl_wrapper__body .owl-carousel .owl-stage-outer .owl-item .item .card .testimonial_img {
+    width: 45% !important;
+  }
+}
+/****************************************************************testimonail section css end**************************************************************************************//*# sourceMappingURL=style.css.map */

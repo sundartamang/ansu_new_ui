@@ -62,12 +62,34 @@ $(function () {
     margin: 10,
     loop: true,
     nav: true,
+    center: true,
+
     responsive: {
       0: {
         items: 1
       },
+      320:{
+        items: 1,
+        stagePadding: 60,
+      },
+      375:{
+        items: 1,
+        stagePadding: 80,
+      },
+      425:{
+        items: 1,
+        stagePadding: 100,
+      },
+      530:{
+        items: 1,
+        stagePadding: 120,
+      },
       768: {
-        items: 2
+        items: 1,
+        stagePadding: 150,
+      },
+      769:{
+        items: 4,
       },
       1170: {
         items: 5
@@ -93,9 +115,32 @@ $(function () {
       0: {
         items: 1
       },
-      768: {
-        items: 2
+      320:{
+        items: 1,
+        stagePadding: 40,
       },
+      375:{
+        items: 1,
+        stagePadding: 60,
+      },
+      425:{
+        items: 1,
+        stagePadding: 70,
+      },
+      530:{
+        items: 1,
+        stagePadding: 100,
+      },
+      768: {
+        items: 1,
+        stagePadding: 130,
+      },
+
+      1024: {
+        items: 1,
+        stagePadding: 200,
+      },
+
       1170: {
         items: 3
       }

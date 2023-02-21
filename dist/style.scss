@@ -1896,7 +1896,8 @@ custom-nav {
                 box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
 
                 .market_indicator__header {
-                    background-color: red;
+                    height: auto !important;
+                    min-height: 73px;
                     margin: 0px auto;
                     width: 95%;
                 }
@@ -2531,7 +2532,7 @@ custom-nav {
                     align-items: center;
 
                     .sentiment_mood__img {
-                        img{
+                        img {
                             max-height: 200px;
                         }
                     }
@@ -2702,17 +2703,21 @@ custom-nav {
 @media only screen and (max-width: 420px) {
     .sentiment {
         .sentiment_wrapper {
-            .sentiment_wrapper__body{
+            .sentiment_wrapper__body {
                 padding: 10px 0px;
-                .market_sentiment{
-                    .market_sentiment__footer{
-                        .invertor_form{
+
+                .market_sentiment {
+                    .market_sentiment__footer {
+                        .invertor_form {
                             display: flex;
                             flex-direction: column;
-                            input, button{
+
+                            input,
+                            button {
                                 margin: 10px 0px;
-                            } 
-                            button{
+                            }
+
+                            button {
                                 width: 100%;
                             }
                         }
@@ -2726,12 +2731,14 @@ custom-nav {
 
 /****************************************************************gallery section css start**************************************************************************************/
 .gallery {
-    height: 303px;
+    height: auto;
+    min-height: 303px;
     margin-top: 10px;
     background: #FDFDFD;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     position: relative;
+    padding-bottom: 40px;
 
     .gallery_wrapper__header {
         padding-top: 30px;
@@ -2800,4 +2807,335 @@ custom-nav {
         }
     }
 }
-/****************************************************************gallery section css end**************************************************************************************/
+
+@media only screen and (max-width: 768px) {
+    .gallery {
+        .gallery_wrapper__body {
+            height: 200px;
+
+            .owl-carousel {
+                height: 100%;
+
+                .owl-stage-outer {
+                    height: 100%;
+
+                    .owl-stage {
+                        height: 100%;
+
+                        .owl-item {
+                            height: 100%;
+
+                            .item {
+                                height: 100%;
+                                opacity: .2;
+                                -webkit-transform: scale3d(0.8, 0.8, 1);
+                                transform: scale3d(0.8, 0.8, 1);
+                                -webkit-transition: all 0.3s ease-in-out;
+                                -moz-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+
+                                img {
+                                    height: 100%;
+                                }
+
+                                .card {
+                                    display: flex !important;
+                                    flex-direction: row;
+                                    height: 100%;
+
+                                    .card-body {
+                                        margin: auto;
+
+                                        .card-text {
+                                            color: #504D4D !important;
+                                        }
+
+                                        span {
+                                            float: right;
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 15px;
+                                            color: #3F3E3E;
+                                        }
+
+                                        .card_body_wrapper {
+                                            height: 100%;
+                                            position: relative;
+
+                                            .card-text {
+                                                padding-left: 10% !important;
+                                            }
+
+                                            img {
+                                                width: 20px;
+                                                height: 25px;
+                                                position: absolute;
+                                                top: -4px;
+                                                left: -6px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .owl-item.active.center .item {
+                            opacity: 1;
+                            -webkit-transform: scale3d(1.0, 1.0, 1);
+                            transform: scale3d(1.0, 1.0, 1);
+                        }
+                    }
+                }
+
+                .owl-nav.disabled {
+                    display: block;
+
+                    .owl-prev {
+                        position: absolute;
+                        left: -27px;
+                    }
+
+                    .owl-next {
+                        position: absolute;
+                        right: -27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***************************************************gallery section css end*********************************************************************/
+
+
+
+/****************************************************************testimonail section css start**************************************************************************************/
+.testimonal {
+    margin-top: 10px;
+    height: auto;
+    min-height: 393px;
+    background: #FDFDFD;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-bottom: 40px;
+    margin-bottom: 300px;
+
+
+    .testimoanl_wrapper {
+        position: relative;
+
+        .testimoanl_wrapper__header {
+            height: 73px;
+            padding-top: 20px;
+
+            .description {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .testimoanl_wrapper__body {
+            margin-top: 40px;
+            height: 260px;
+            width: 100%;
+
+            .owl-carousel {
+                height: 100%;
+
+                .owl-stage-outer {
+                    height: 100%;
+
+                    .owl-stage {
+                        height: 100%;
+
+                        .owl-item {
+                            height: 100%;
+
+                            .item {
+                                height: 100%;
+                                opacity: .2;
+                                -webkit-transform: scale3d(0.8, 0.8, 1);
+                                transform: scale3d(0.8, 0.8, 1);
+                                -webkit-transition: all 0.3s ease-in-out;
+                                -moz-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+
+                                img {
+                                    height: 100%;
+                                }
+
+                                .card {
+                                    display: flex !important;
+                                    flex-direction: row;
+                                    height: 100%;
+
+                                    .card-body {
+                                        margin: auto;
+
+                                        .card-text {
+                                            color: #504D4D !important;
+                                        }
+
+                                        span {
+                                            float: right;
+                                            font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 15px;
+                                            color: #3F3E3E;
+                                        }
+
+                                        .card_body_wrapper {
+                                            height: 100%;
+                                            position: relative;
+
+                                            .card-text {
+                                                padding-left: 10% !important;
+                                            }
+
+                                            img {
+                                                width: 20px;
+                                                height: 25px;
+                                                position: absolute;
+                                                top: -4px;
+                                                left: -7px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .owl-item.active.center .item {
+                            opacity: 1;
+                            -webkit-transform: scale3d(1.0, 1.0, 1);
+                            transform: scale3d(1.0, 1.0, 1);
+                        }
+                    }
+                }
+
+                .owl-nav.disabled {
+                    display: block;
+
+                    .owl-prev {
+                        position: absolute;
+                        left: -27px;
+                    }
+
+                    .owl-next {
+                        position: absolute;
+                        right: -27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .testimonal {
+        .testimoanl_wrapper {
+
+            .testimoanl_wrapper__header {
+                height: auto;
+                min-height: 73px;
+            }
+
+            .testimoanl_wrapper__body {
+                // background-color: purple !important;
+                height: 187px;
+
+                .owl-carousel {
+                    .owl-stage-outer {
+                        .owl-item {
+                            .item {
+                                .card {
+                                    .card-body {
+                                        .card_body_wrapper {
+
+                                            p {
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                            }
+
+                                            span {
+                                                font-size: 10px;
+                                                line-height: 15px;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .v {
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .testimonal {
+        .testimoanl_wrapper {
+
+            .testimoanl_wrapper__header {
+                height: auto;
+                min-height: 73px;
+            }
+
+            .testimoanl_wrapper__body {
+                // background-color: purple !important;
+                height: 187px;
+
+                .owl-carousel {
+                    .owl-stage-outer {
+                        .owl-item {
+                            .item {
+                                .card {
+                                    .card-body {
+                                        padding: 10px !important;
+
+                                        .card_body_wrapper {
+                                            .testimonial_quote {
+                                                height: 20px !important;
+                                                width: 15px !important;
+                                                left: -8px !important;
+                                            }
+
+                                            span {
+                                                font-size: 8px;
+                                                line-height: 15px;
+                                            }
+
+                                        }
+                                    }
+
+                                    .testimonial_img {
+                                        width: 45% !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/****************************************************************testimonail section css end**************************************************************************************/
