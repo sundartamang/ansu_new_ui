@@ -1982,6 +1982,11 @@ custom-nav {
                         line-height: 18px;
                         text-align: center;
                         color: var(--chart_color);
+                        
+
+                        img{
+                            font-size: 10px !important;
+                        }
                     }
 
                     tbody tr {
@@ -1992,8 +1997,8 @@ custom-nav {
                     }
 
                     tbody tr:hover {
-                        // background-color: red !important;
-                        transform: scale(1.01);
+                        background-color: #F3F7FC !important;
+                        // transform: scale(1.01);
                         opacity: 1;
                     }
 
@@ -2011,6 +2016,17 @@ custom-nav {
                     tbody>tr>td:last-of-type {
                         color: #7C7F8A;
                         filter: blur(6px);
+                    }
+
+                    .fa-star{
+                        font-size: 18px;
+                    }
+
+                    .fa_full{
+                        color: #FFC700 !important;
+                    }
+                    .fa_half{
+                        color: #CAC8C1 !important;
                     }
                 }
             }

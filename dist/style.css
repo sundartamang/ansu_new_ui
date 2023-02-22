@@ -1499,6 +1499,9 @@ custom-nav .owl-next i {
   text-align: center;
   color: var(--chart_color);
 }
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table thead tr td img {
+  font-size: 10px !important;
+}
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.32);
   cursor: pointer;
@@ -1506,7 +1509,7 @@ custom-nav .owl-next i {
   opacity: 0.9;
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr:hover {
-  transform: scale(1.01);
+  background-color: #F3F7FC !important;
   opacity: 1;
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr td {
@@ -1522,6 +1525,15 @@ custom-nav .owl-next i {
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody > tr > td:last-of-type {
   color: #7C7F8A;
   filter: blur(6px);
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table .fa-star {
+  font-size: 18px;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table .fa_full {
+  color: #FFC700 !important;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table .fa_half {
+  color: #CAC8C1 !important;
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .button_wrapper {
   position: absolute;
