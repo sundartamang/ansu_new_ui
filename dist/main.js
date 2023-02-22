@@ -14,29 +14,29 @@ $(function () {
         margin: 0,
         center: true,
       },
-      320:{
+      320: {
         items: 1,
-        center:true,
-        margin:0,
-        stagePadding:50
+        center: true,
+        margin: 0,
+        stagePadding: 50
       },
-      425:{
+      425: {
         items: 1,
-        center:true,
-        margin:0,
-        stagePadding:50
+        center: true,
+        margin: 0,
+        stagePadding: 50
       },
-      500:{
-        items:1,
-        stagePadding:90,
-        margin:20,
-        center:true
+      500: {
+        items: 1,
+        stagePadding: 90,
+        margin: 20,
+        center: true
       },
-      602:{
-        items:1,
-        stagePadding:110,
-        margin:20,
-        center:true
+      602: {
+        items: 1,
+        stagePadding: 110,
+        margin: 20,
+        center: true
       },
       696: {
         items: 2,
@@ -64,19 +64,39 @@ $(function () {
 
   var newsOwl = $("#corporateNewsWrapper");
   newsOwl.owlCarousel({
-      items: 2,
-      margin: 30,
-      loop: true,
-      nav: true,
+    items: 2,
+    margin: 30,
+    loop: true,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 50,
+        margin: 0,
+        center: true,
+      },
+
+      490: {
+        items: 1,
+        stagePadding: 70,
+        margin: 0,
+        center: true,
+      },
+
+      696: {
+        items: 2,
+        margin: 30,
+      }
+    }
   });
 
   var newsOwlResponsive = $("#newsOwlCarouselRsponsive");
   newsOwlResponsive.owlCarousel({
-      items: 1,
-      margin: 30,
-      loop: true,
-      nav: true,
-      
+    items: 1,
+    margin: 30,
+    loop: true,
+    nav: true,
+
   });
 
 
@@ -93,19 +113,19 @@ $(function () {
       0: {
         items: 1
       },
-      320:{
+      320: {
         items: 1,
         stagePadding: 60,
       },
-      375:{
+      375: {
         items: 1,
         stagePadding: 80,
       },
-      425:{
+      425: {
         items: 1,
         stagePadding: 100,
       },
-      530:{
+      530: {
         items: 1,
         stagePadding: 120,
       },
@@ -113,7 +133,7 @@ $(function () {
         items: 1,
         stagePadding: 150,
       },
-      769:{
+      769: {
         items: 4,
       },
       1170: {
@@ -138,19 +158,19 @@ $(function () {
       0: {
         items: 1
       },
-      320:{
+      320: {
         items: 1,
         stagePadding: 40,
       },
-      375:{
+      375: {
         items: 1,
         stagePadding: 60,
       },
-      425:{
+      425: {
         items: 1,
         stagePadding: 70,
       },
-      530:{
+      530: {
         items: 1,
         stagePadding: 100,
       },
