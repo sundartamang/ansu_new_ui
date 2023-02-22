@@ -840,13 +840,14 @@ custom-nav .owl-next i {
   position: relative;
   z-index: 0;
 }
-.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container img {
+.custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container i {
   height: 50%;
   width: 20px;
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
+  color: #FFC700 !important;
 }
 .custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container input {
   width: 427px;
@@ -1510,6 +1511,7 @@ custom-nav .owl-next i {
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr:hover {
   background-color: #F3F7FC !important;
+  transform: scale(1.01);
   opacity: 1;
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table tbody tr td {
@@ -1869,6 +1871,11 @@ custom-nav .owl-next i {
   position: relative;
 }
 
+@media only screen and (min-width: 1500px) {
+  .news_wrapper__body .item img {
+    height: 120px !important;
+  }
+}
 @media only screen and (max-width: 695px) {
   .coroperater__left .news_wrapper .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
     opacity: 0.2;
