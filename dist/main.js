@@ -10,7 +10,9 @@ $(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: true,
+        stagePadding: 70,
+        margin: 10
       },
       696: {
         items: 2,
@@ -39,21 +41,14 @@ $(function () {
   });
 
 
-  var newsOwlResponsive = $("#newsOwlCarouselRsponsive");
-  newsOwlResponsive.owlCarousel({
-    items: 1,
-    margin: 30,
-    loop: true,
-    nav: true
-  });
-
-  var newsCorporateOwl = $("#newsOwlCarousel");
-  newsCorporateOwl.owlCarousel({
+  var newsOwl = $("#corporateNewsOwlCarousel");
+  newsOwl.owlCarousel({
       items: 2,
       margin: 30,
       loop: true,
       nav: true
   });
+
 
 
   var galleryOwl = $("#gallery");
@@ -98,8 +93,6 @@ $(function () {
   });
 
 
-
-  "use strict";
 
   var testimonialOwl = $("#testimonialCarousel");
   testimonialOwl.owlCarousel({

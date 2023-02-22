@@ -1219,14 +1219,14 @@ custom-nav {
 
                             .button_wrapper {
                                 position: relative;
-                                margin-top: 25px;
+                                // margin-top: 25px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: flex-end;
                             }
 
                             .read_more_btn {
-                                margin-top: 25px;
+                                // margin-top: 25px;
                             }
                         }
                     }
@@ -1423,6 +1423,23 @@ custom-nav {
                 }
             }
 
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+
+
+    .research__wrapper_column_left {
+        .item {
+            .owl-carousel__body {
+                .button_wrapper {
+                    margin-top: 25px;
+                    .read_more_btn{
+                        margin-top: 25px;
+                    }
+                }
+            }
         }
     }
 }
@@ -3272,7 +3289,6 @@ custom-nav {
                     opacity: 0.9;
                 }
             }
-
         }
 
 
@@ -3326,6 +3342,7 @@ custom-nav {
 
                 .subscribe_wrapper {
                     order: 1;
+
                     h4 {
                         font-size: 24px;
                         line-height: 36px;
@@ -3394,6 +3411,7 @@ custom-nav {
 
                 .product_link_wrapper {
                     order: 2;
+
                     h4 {
                         font-weight: 400;
                         font-size: 18px;
@@ -3409,6 +3427,7 @@ custom-nav {
 
                 .detail_Wrapper {
                     order: 4;
+
                     h4 {
                         font-weight: 400;
                         font-size: 20px;
@@ -3442,3 +3461,7 @@ custom-nav {
 }
 
 /****************************************************************footer section css end**************************************************************************************/
+
+
+
+
