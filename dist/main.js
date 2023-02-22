@@ -10,22 +10,43 @@ $(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true,
         stagePadding: 70,
-        margin: 10
+        margin: 0,
+        center: true,
+      },
+      320:{
+        items: 1,
+        center:true,
+        margin:0,
+        stagePadding:50
+      },
+      425:{
+        items: 1,
+        center:true,
+        margin:0,
+        stagePadding:50
+      },
+      500:{
+        items:1,
+        stagePadding:90,
+        margin:20,
+        center:true
+      },
+      602:{
+        items:1,
+        stagePadding:110,
+        margin:20,
+        center:true
       },
       696: {
         items: 2,
-        nav: true
       },
 
       991: {
         items: 2,
-        nav: true
       },
       1030: {
         items: 3,
-        nav: true
       },
     }
   });
@@ -47,8 +68,15 @@ $(function () {
       margin: 30,
       loop: true,
       nav: true,
-      
+  });
 
+  var newsOwlResponsive = $("#newsOwlCarouselRsponsive");
+  newsOwlResponsive.owlCarousel({
+      items: 1,
+      margin: 30,
+      loop: true,
+      nav: true,
+      
   });
 
 
