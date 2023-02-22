@@ -41,7 +41,7 @@ $(function () {
   });
 
 
-  var newsOwl = $("#corporateNewsOwlCarousel");
+  var newsOwl = $("#corporateNewsWrapper");
   newsOwl.owlCarousel({
       items: 2,
       margin: 30,

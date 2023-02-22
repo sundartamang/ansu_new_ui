@@ -1628,6 +1628,7 @@ custom-nav .owl-next i {
 }
 .coroperater .coroperater__wrapper .coroperater__left {
   height: auto;
+  min-width: 100%;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper {
   height: auto;
@@ -1641,19 +1642,24 @@ custom-nav .owl-next i {
   margin-top: 15px;
   height: auto;
   min-height: 302px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
   padding-left: 25px;
   padding-right: 25px;
-  padding: 40px;
   position: relative;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item {
-  border-radius: 10px;
-  height: 100%;
+  height: 234px;
+  border: 1px solid rgba(74, 74, 74, 0.1);
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item img {
-  height: 133px;
-  border-radius: 10px 10px 0px 0px;
+  height: 88px;
+}
+.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item .card_desc {
+  font-size: 10px;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item .owl-carousel__body {
   padding: 15px 15px 0px 15px;
@@ -1672,12 +1678,13 @@ custom-nav .owl-next i {
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .owl-carousel .owl-nav.disabled {
   display: block;
+  background-color: orange;
 }
-.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .owl-carousel .owl-nav.disabled .owl-prev {
+.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .owl-carousel .owl-nav .owl-prev {
   position: absolute;
   left: -20px;
 }
-.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .owl-carousel .owl-nav.disabled .owl-next {
+.coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .owl-carousel .owl-nav .owl-next {
   position: absolute;
   right: -20px;
 }
