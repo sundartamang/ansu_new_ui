@@ -1,8 +1,8 @@
 
 $(function () {
   // Owl Carousel
-  var researchOwl = $("#researchOpinion");
-  researchOwl.owlCarousel({
+  var recompanySearchOwl = $("#recompanySearchOpinion");
+  recompanySearchOwl.owlCarousel({
     items: 3,
     margin: 30,
     loop: true,
@@ -193,6 +193,8 @@ $(function () {
 });
 
 
+
+// navbar repsonsive
 // let menu = document.querySelector('#menu-icon');
 // let hidden_nav = document.querySelector('.header__responsive_menu_more');
 
@@ -203,12 +205,26 @@ $(function () {
 
 // }
 
-
 let menu = document.querySelector('#menu-icon');
 let hidden_nav = document.querySelector('.header__responsive_menu_more');
 
 menu.onclick = () => {
   menu.classList.toggle('bx-x');
   hidden_nav.classList.toggle('active')
+}
 
+// hide display company page companySearch input field
+let companySearch = document.querySelector('#companySearchIcon');
+document.getElementById('companySearchIcon').onclick = () => {
+  document.getElementById('companySearch').classList.add("visible");
+  document.getElementById('companyClear').classList.add("visible");
+  document.getElementById('search_icon_wraper').classList.add("changePosition");
+  document.getElementById('companySearch').focus();
+  document.getElementById('companySearchIcon').classList.add("hide");
+}
+document.getElementById('companyClear').onclick = () => {
+  document.getElementById('companySearchIcon').classList.remove("hide");
+  document.getElementById('companySearch').classList.remove("visible");
+  document.getElementById('search_icon_wraper').classList.remove("changePosition");
+  document.getElementById('companyClear').classList.remove("visible");
 }

@@ -718,21 +718,53 @@ header css start
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 .header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 190px;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper .left_search_icon {
+  position: absolute;
+  left: 29px;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper .left_search_icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper a {
   background-color: var(--main_color_one);
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper i {
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper a i {
   font-size: 12px;
   color: var(--p_color_four);
+  cursor: pointer;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper input {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #B6ADAD !important;
+  height: 24px;
+  padding-left: 12px;
+  background: #FFFFFF;
+  border: 0.7px solid #D9D9D9;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 520px;
 }
 .header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper {
   background-color: var(--main_color_one);
@@ -2862,6 +2894,37 @@ footer section css start
 */
 /*********************************home page css end *********************************************************/
 /*********************************company page css start *******************************************************/
+#companySearchIcon.hide {
+  display: none;
+}
+
+#companySearch {
+  visibility: hidden;
+}
+
+#search_icon_wraper.changePosition {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#companySearch.visible {
+  width: 85%;
+  visibility: visible;
+}
+
+#companyClear {
+  opacity: 0;
+  display: inline-block;
+}
+
+#companyClear.visible {
+  opacity: 1;
+}
+
+#companyClear:hover {
+  cursor: pointer;
+}
+
 .company_navbar {
   height: 34px;
   background: var(--main_color_one);
