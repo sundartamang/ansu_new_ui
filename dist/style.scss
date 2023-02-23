@@ -804,7 +804,7 @@ header css start
                         position: absolute;
                         left: 29px;
 
-                        i{
+                        i {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -3889,11 +3889,12 @@ footer section css start
     display: none;
 }
 
-#companySearch{
+#companySearch {
     visibility: hidden;
-    // transition: 0.8s; 
+    transition: 0.3s;
 }
-#search_icon_wraper.changePosition{
+
+#search_icon_wraper.changePosition {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -3902,10 +3903,13 @@ footer section css start
     width: 85%;
     visibility: visible;
 }
-#companyClear{
+
+#companyClear {
     opacity: 0;
     display: inline-block;
+    transition: 0.3s;
 }
+
 #companyClear.visible {
     opacity: 1;
 }
@@ -3948,6 +3952,13 @@ footer section css start
     .company_navbar__menu {
         width: 95%;
     }
+}
+
+/*
+company detail section css start
+*/
+.company_detial {
+    height: 700px;
 }
 
 /*********************************company page css end *********************************************************/

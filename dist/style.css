@@ -2900,6 +2900,7 @@ footer section css start
 
 #companySearch {
   visibility: hidden;
+  transition: 0.3s;
 }
 
 #search_icon_wraper.changePosition {
@@ -2915,6 +2916,7 @@ footer section css start
 #companyClear {
   opacity: 0;
   display: inline-block;
+  transition: 0.3s;
 }
 
 #companyClear.visible {
@@ -2956,4 +2958,11 @@ footer section css start
     width: 95%;
   }
 }
+/*
+company detail section css start
+*/
+.company_detial {
+  height: 700px;
+}
+
 /*********************************company page css end *********************************************************//*# sourceMappingURL=style.css.map */
