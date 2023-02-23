@@ -721,6 +721,46 @@ header css start
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper {
+  background-color: var(--main_color_one);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .search_icon_wraper i {
+  font-size: 12px;
+  color: var(--p_color_four);
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper {
+  background-color: var(--main_color_one);
+  height: 25px;
+  width: 107px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper a .user_icon {
+  padding-right: 5px;
+}
+.header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper a .arrow_down {
+  padding-top: 5px;
+  padding-left: 5px;
+}
 .header .header__responsive {
   display: none;
 }
@@ -2821,5 +2861,36 @@ footer section css start
 footer section css start
 */
 /*********************************home page css end *********************************************************/
-/*********************************company page css start *********************************************************/
+/*********************************company page css start *******************************************************/
+.company_navbar {
+  height: 34px;
+  background: var(--main_color_one);
+  box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.16);
+}
+.company_navbar .company_navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 85%;
+  margin: 0px auto;
+}
+.company_navbar .company_navbar__menu .company_navbar__items {
+  display: flex;
+  align-items: center;
+}
+.company_navbar .company_navbar__menu .company_navbar__items a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--p_color_four);
+}
+
+@media (max-width: 1536px) {
+  .company_navbar__menu {
+    width: 95%;
+  }
+}
 /*********************************company page css end *********************************************************//*# sourceMappingURL=style.css.map */

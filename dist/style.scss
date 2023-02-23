@@ -640,6 +640,7 @@ custom-nav {
         }
     }
 }
+
 /*****owl carousel css end*****/
 @media only screen and (max-width: 1126px) {
 
@@ -648,16 +649,17 @@ custom-nav {
         line-height: 18px !important;
     }
 
-    .regular_header{
+    .regular_header {
         // font-weight: 600;
     }
-    
-    .card_header{
+
+    .card_header {
         font-weight: 700;
     }
 }
+
 @media only screen and (max-width: 767px) {
-    .regular_text{
+    .regular_text {
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -791,6 +793,53 @@ header css start
                 justify-content: flex-end;
                 align-items: center;
                 column-gap: 30px;
+
+
+                .search_icon_wraper {
+                    background-color: var(--main_color_one);
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 12px;
+                        color: var(--p_color_four);
+                    }
+                }
+
+                .profile_button_wrapper {
+                    background-color: var(--main_color_one);
+                    height: 25px;
+                    width: 107px;
+                    cursor: pointer;
+                    border-radius: 5px;
+
+                    a {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: var(--p_color_four);
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        height: 100%;
+
+                        .user_icon {
+                            padding-right: 5px;
+                        }
+
+                        .arrow_down {
+                            padding-top: 5px;
+                            padding-left: 5px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -2413,7 +2462,7 @@ corporate section css start
                 .corperate_wrapper__header {
                     height: 73px;
                     margin-top: 19px;
-                    
+
                 }
 
                 .corperate_wrapper__body {
@@ -2844,7 +2893,7 @@ market sentiment section css start
             grid-template-columns: 2fr 2fr;
             column-gap: 22px;
 
-            p{
+            p {
                 padding: 10px 0px;
             }
 
@@ -3800,5 +3849,41 @@ footer section css start
 
 
 
-/*********************************company page css start *********************************************************/
+/*********************************company page css start *******************************************************/
+.company_navbar {
+    height: 34px;
+    background: var(--main_color_one);
+    box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.16);
+
+    .company_navbar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 85%;
+        margin: 0px auto;
+
+        .company_navbar__items {
+            display: flex;
+            align-items: center;
+
+
+            a {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--p_color_four);
+            }
+        }
+    }
+}
+
+@media (max-width: 1536px) {
+    .company_navbar__menu {
+        width: 95%;
+    }
+}
+
 /*********************************company page css end *********************************************************/
