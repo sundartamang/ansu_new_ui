@@ -1,14 +1,3 @@
-/* header css  */
-/* jumbotron css start */
-/* jumbotron css end */
-/* research opinion css start */
-/* research opinion css end */
-/* product css start */
-/* product css end */
-/* market_indicator css start */
-/* market_indicator css end */
-/* companion css start */
-/* companion css end */
 * {
   padding: 0px;
   margin: 0px;
@@ -232,7 +221,6 @@ input:focus {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   text-align: center;
   border: none;
   color: #FFFFFF;
@@ -254,7 +242,6 @@ input:focus {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   border: none;
   text-align: center;
   color: #FFFFFF;
@@ -276,7 +263,6 @@ input:focus {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   border: none;
   text-align: center;
   color: #FFFFFF;
@@ -383,7 +369,7 @@ input:focus {
 .card_header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 15px;
   line-height: 25px;
   color: var(--main_color_one);
@@ -617,7 +603,29 @@ custom-nav .owl-next i {
 }
 
 /*****owl carousel css end*****/
-/*********************************************BASIC CSS END HERE*********************************************************/
+@media only screen and (max-width: 1126px) {
+  .main_btn {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+  .card_header {
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .regular_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/*
+BASIC COMMON CSS END HERE
+*/
+/*********************************home page css start *********************************************************/
+/*
+header css start
+*/
 .header {
   background-color: var(--main_color_one);
   width: 100%;
@@ -718,10 +726,6 @@ custom-nav .owl-next i {
 }
 
 @media only screen and (max-width: 1126px) {
-  .main_btn {
-    font-size: 12px !important;
-    line-height: 18px !important;
-  }
   .header {
     position: fixed;
   }
@@ -811,7 +815,12 @@ custom-nav .owl-next i {
     line-height: 16px !important;
   }
 }
-/*********************************************jumbrotron css start*********************************************************/
+/*
+header css end
+*/
+/*
+Jumbotron css start
+*/
 .custom_jumbotron {
   height: auto;
   min-height: 264px;
@@ -930,8 +939,12 @@ custom-nav .owl-next i {
     font-size: 10px !important;
   }
 }
-/*********************************************jumbrotron css end*********************************************************/
-/*********************************************Research and opinion section csss start*********************************************************/
+/*
+Jumbotron css end
+*/
+/*
+research and opinion css start
+*/
 .research {
   height: auto;
   min-height: 531px;
@@ -1207,8 +1220,9 @@ custom-nav .owl-next i {
     height: 100px !important;
   }
 }
-/*********************************************Responsive news section end*********************************************************/
-/*********************************************Responsive news section start*********************************************************/
+/*
+research and opinion css end
+*/
 .responsive_news {
   display: none;
   padding-top: 20px;
@@ -1243,8 +1257,9 @@ custom-nav .owl-next i {
     display: block;
   }
 }
-/*********************************************Responsive news section end*********************************************************/
-/*********************************************our product section csss start*********************************************************/
+/*
+our product section css start
+*/
 .product_container {
   height: auto;
   min-height: 150px;
@@ -1383,8 +1398,12 @@ custom-nav .owl-next i {
     height: 99px !important;
   }
 }
-/*********************************************our product section csss end*********************************************************/
-/*********************************************market indicator section csss start*********************************************************/
+/*
+our product section css end
+*/
+/*
+martket endicator  css start
+*/
 .market_indicator {
   margin-top: 22px;
   height: auto;
@@ -1523,7 +1542,7 @@ custom-nav .owl-next i {
   padding: 5px;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -1601,8 +1620,12 @@ custom-nav .owl-next i {
     flex-direction: column;
   }
 }
-/*********************************************market indicator section csss end*********************************************************/
-/*********************************************companion section section csss start*********************************************************/
+/*
+martket endicator css end
+*/
+/*
+companion section css start
+*/
 .compantion_container {
   height: auto;
   min-height: 122px;
@@ -1658,18 +1681,19 @@ custom-nav .owl-next i {
 
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
   .compantion_container .compantion_container__wrapper .description h4 {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
   }
   .compantion_container .compantion_container__wrapper .description p {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    display: none;
   }
   .compantion_container .compantion_container__wrapper .signup h4 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
   }
   .compantion_container .compantion_container__wrapper .signup .create_btn {
@@ -1678,8 +1702,8 @@ custom-nav .owl-next i {
   }
   .compantion_container .compantion_container__wrapper .signup button {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 28px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 692px) {
@@ -1711,8 +1735,12 @@ custom-nav .owl-next i {
     line-height: 18px;
   }
 }
-/*********************************************companion section section csss end*********************************************************/
-/*********************************************coroperate section css start*********************************************************/
+/*
+companion section css end
+*/
+/*
+corporate section css start
+*/
 .coroperater {
   height: auto;
   min-height: 953px;
@@ -2021,8 +2049,12 @@ custom-nav .owl-next i {
     margin-top: 14px;
   }
 }
-/*********************************************coroperate section css end*********************************************************/
-/**********************************subscriber portfolio section css start**********************************************/
+/*
+corporate section css end
+*/
+/*
+subscribe portfilio section css start
+*/
 .subscriber {
   margin-top: 10px;
   background: #091734;
@@ -2071,7 +2103,12 @@ custom-nav .owl-next i {
     display: none;
   }
 }
-/**********************************subscriber portfolio section css end**********************************************/
+/*
+subscribe portfilio section css end
+*/
+/*
+market sentiment section css start
+*/
 .sentiment {
   height: auto;
   min-height: 540px;
@@ -2093,6 +2130,9 @@ custom-nav .owl-next i {
   grid-template-columns: 2fr 2fr;
   -moz-column-gap: 22px;
        column-gap: 22px;
+}
+.sentiment .sentiment_wrapper .sentiment_wrapper__body p {
+  padding: 10px 0px;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood {
   height: auto;
@@ -2262,7 +2302,12 @@ custom-nav .owl-next i {
     width: 100%;
   }
 }
-/****************************************************************gallery section css start**************************************************************************************/
+/*
+market sentiment section css end
+*/
+/*
+gallery section css start
+*/
 .gallery {
   height: auto;
   min-height: 303px;
@@ -2401,8 +2446,12 @@ custom-nav .owl-next i {
     right: -27px;
   }
 }
-/***************************************************gallery section css end*********************************************************************/
-/****************************************************************testimonail section css start**************************************************************************************/
+/*
+gallery section css end
+*/
+/*
+testimonail section css start
+*/
 .testimonal {
   margin-top: 10px;
   height: auto;
@@ -2553,8 +2602,12 @@ custom-nav .owl-next i {
     width: 45% !important;
   }
 }
-/****************************************************************testimonail section css end**************************************************************************************/
-/****************************************************************footer section css start**************************************************************************************/
+/*
+testimonail section css end
+*/
+/*
+footer section css start
+*/
 .footer {
   height: auto;
   min-height: 313px;
@@ -2764,4 +2817,9 @@ custom-nav .owl-next i {
     margin-right: 10%;
   }
 }
-/****************************************************************footer section css end**************************************************************************************//*# sourceMappingURL=style.css.map */
+/*
+footer section css start
+*/
+/*********************************home page css end *********************************************************/
+/*********************************company page css start *********************************************************/
+/*********************************company page css end *********************************************************//*# sourceMappingURL=style.css.map */
