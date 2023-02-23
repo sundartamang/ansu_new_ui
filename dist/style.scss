@@ -1,15 +1,3 @@
-/* header css  */
-/* jumbotron css start */
-/* jumbotron css end */
-/* research opinion css start */
-/* research opinion css end */
-/* product css start */
-/* product css end */
-/* market_indicator css start */
-/* market_indicator css end */
-/* companion css start */
-/* companion css end */
-
 * {
     padding: 0px;
     margin: 0px;
@@ -57,7 +45,6 @@ body {
         background-color: #ebf5fe !important;
     }
 }
-
 
 
 a {
@@ -245,7 +232,6 @@ input {
 }
 
 .success_btn {
-    // width: 161.34px;
     height: 25px;
     background: #0A9C33;
     border-radius: 3px;
@@ -254,7 +240,6 @@ input {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     border: none;
     color: #FFFFFF;
@@ -268,7 +253,6 @@ input {
 }
 
 .secondary_btn {
-    // width: 142.3px;
     height: 25px;
     background: #8C8C8C;
     border-radius: 3px;
@@ -277,7 +261,6 @@ input {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     border: none;
     text-align: center;
     color: #FFFFFF;
@@ -291,7 +274,6 @@ input {
 }
 
 .danger_btn {
-    // width: 142.3px;
     height: 25px;
     background: #E91616;
     border-radius: 3px;
@@ -300,7 +282,6 @@ input {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     border: none;
     text-align: center;
     color: #FFFFFF;
@@ -459,7 +440,6 @@ input {
     transition: all 300ms ease-in-out;
 }
 
-.create_btn:hover {}
 
 .owl-item {
     cursor: pointer;
@@ -537,7 +517,6 @@ input {
     .nav-item {
         .nav-link.active {
             border: 0px;
-            // background-color: red;
             background-color: var(--p_color_four);
             box-shadow: none !important;
             border: 0px;
@@ -665,10 +644,16 @@ custom-nav {
 /*****owl carousel css end*****/
 
 
-/*********************************************BASIC CSS END HERE*********************************************************/
+/*
+BASIC COMMON CSS END HERE
+*/
 
 
+/*********************************home page css start *********************************************************/
 
+/*
+header css start
+*/
 .header {
     background-color: var(--main_color_one);
     width: 100%;
@@ -856,7 +841,6 @@ custom-nav {
                 // transition: all .50s ease-in-out;
                 // text-align: left;
 
-
                 transition: all .50s ease;
                 position: absolute;
                 top: 100%;
@@ -884,10 +868,6 @@ custom-nav {
 
 
             }
-
-            // .header__responsive_menu_more.open{
-            //     top: 100%;
-            // }
 
             .header__responsive_menu_more.active {
                 right: 0;
@@ -938,9 +918,14 @@ custom-nav {
     }
 }
 
+/*
+header css end
+*/
 
 
-/*********************************************jumbrotron css start*********************************************************/
+/*
+Jumbotron css start
+*/
 .custom_jumbotron {
     height: auto;
     min-height: 264px;
@@ -948,7 +933,6 @@ custom-nav {
     display: grid;
     place-items: center;
     position: relative;
-    // padding-top: 92px;
 
     .custom_jumbotron__wrapper {
         opacity: 1 !important;
@@ -1118,12 +1102,15 @@ custom-nav {
     }
 }
 
-/*********************************************jumbrotron css end*********************************************************/
+/*
+Jumbotron css end
+*/
 
 
 
-
-/*********************************************Research and opinion section csss start*********************************************************/
+/*
+research and opinion css start
+*/
 .research {
     height: auto;
     min-height: 531px;
@@ -1340,7 +1327,7 @@ custom-nav {
 
 }
 
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2000px) {
     .research__wrapper_column_left {
 
         .crasoul_wrapper {
@@ -1579,12 +1566,12 @@ custom-nav {
     }
 }
 
-/*********************************************Responsive news section end*********************************************************/
+/*
+research and opinion css end
+*/
 
 
-
-/*********************************************Responsive news section start*********************************************************/
-// for news wrapper
+// respnsive news
 .responsive_news {
     display: none;
     padding-top: 20px;
@@ -1620,24 +1607,6 @@ custom-nav {
                 }
             }
         }
-
-
-        // .owl-carousel {
-        //     .owl-stage-outer {
-        //         .owl-stage {
-        //             border-radius: 15px;
-
-        //             .owl-item {
-
-        //                 .item {
-        //                     .owl-carousel__body {
-        //                         padding: 15px 15px 0px 15px;
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -1651,11 +1620,12 @@ custom-nav {
     }
 }
 
-/*********************************************Responsive news section end*********************************************************/
+// responsive news css end
 
 
-
-/*********************************************our product section csss start*********************************************************/
+/*
+our product section css start
+*/
 .product_container {
     height: auto;
     min-height: 150px;
@@ -1853,12 +1823,14 @@ custom-nav {
 
 }
 
-/*********************************************our product section csss end*********************************************************/
+/*
+our product section css end
+*/
 
 
-
-
-/*********************************************market indicator section csss start*********************************************************/
+/*
+martket endicator  css start
+*/
 .market_indicator {
     margin-top: 22px;
     height: auto;
@@ -2010,9 +1982,9 @@ custom-nav {
                         line-height: 18px;
                         text-align: center;
                         color: var(--chart_color);
-                        
 
-                        img{
+
+                        img {
                             font-size: 10px !important;
                         }
                     }
@@ -2046,14 +2018,15 @@ custom-nav {
                         filter: blur(6px);
                     }
 
-                    .fa-star{
+                    .fa-star {
                         font-size: 18px;
                     }
 
-                    .fa_full{
+                    .fa_full {
                         color: #FFC700 !important;
                     }
-                    .fa_half{
+
+                    .fa_half {
                         color: #CAC8C1 !important;
                     }
                 }
@@ -2138,13 +2111,14 @@ custom-nav {
     }
 }
 
+/*
+martket endicator css end
+*/
 
-/*********************************************market indicator section csss end*********************************************************/
 
-
-
-
-/*********************************************companion section section csss start*********************************************************/
+/*
+companion section css start
+*/
 .compantion_container {
     height: auto;
     min-height: 122px;
@@ -2287,11 +2261,14 @@ custom-nav {
     }
 }
 
-/*********************************************companion section section csss end*********************************************************/
+/*
+companion section css end
+*/
 
 
-
-/*********************************************coroperate section css start*********************************************************/
+/*
+corporate section css start
+*/
 .coroperater {
     height: auto;
     min-height: 953px;
@@ -2743,11 +2720,14 @@ custom-nav {
     }
 }
 
-/*********************************************coroperate section css end*********************************************************/
+/*
+corporate section css end
+*/
 
 
-
-/**********************************subscriber portfolio section css start**********************************************/
+/*
+subscribe portfilio section css start
+*/
 .subscriber {
     margin-top: 10px;
     background: #091734;
@@ -2807,10 +2787,15 @@ custom-nav {
     }
 }
 
-/**********************************subscriber portfolio section css end**********************************************/
+/*
+subscribe portfilio section css end
+*/
 
 
 
+/*
+market sentiment section css start
+*/
 .sentiment {
     height: auto;
     min-height: 540px;
@@ -3052,8 +3037,15 @@ custom-nav {
     }
 }
 
+/*
+market sentiment section css end
+*/
 
-/****************************************************************gallery section css start**************************************************************************************/
+
+
+/*
+gallery section css start
+*/
 .gallery {
     height: auto;
     min-height: 303px;
@@ -3132,9 +3124,9 @@ custom-nav {
     }
 }
 
-@media only screen and (min-width: 1800px){
+@media only screen and (min-width: 1800px) {
     .gallery {
-        .gallery_wrapper__body{
+        .gallery_wrapper__body {
             height: 230px !important;
         }
     }
@@ -3239,11 +3231,15 @@ custom-nav {
     }
 }
 
-/***************************************************gallery section css end*********************************************************************/
+/*
+gallery section css end
+*/
 
 
 
-/****************************************************************testimonail section css start**************************************************************************************/
+/*
+testimonail section css start
+*/
 .testimonal {
     margin-top: 10px;
     height: auto;
@@ -3371,9 +3367,9 @@ custom-nav {
 
 
 @media only screen and (min-width: 2000px) {
-    .testimonal{
-        .testimoanl_wrapper{
-            .testimoanl_wrapper__body{
+    .testimonal {
+        .testimoanl_wrapper {
+            .testimoanl_wrapper__body {
                 height: 350px !important;
             }
         }
@@ -3479,11 +3475,15 @@ custom-nav {
     }
 }
 
-/****************************************************************testimonail section css end**************************************************************************************/
+/*
+testimonail section css end
+*/
 
 
 
-/****************************************************************footer section css start**************************************************************************************/
+/*
+footer section css start
+*/
 .footer {
     height: auto;
     min-height: 313px;
@@ -3512,26 +3512,6 @@ custom-nav {
                 // background-color: green;
                 display: grid;
                 grid-template-columns: 2fr 2fr;
-            }
-
-            .product_wrapper {
-                // background-color: blue;
-            }
-
-            .social_wrapper {
-                // background-color: brown;
-
-                // .social_wrapper__icon{
-                //     background-color: #032033;
-                // }
-
-                // .appstore_wrapper__icon{
-                //     background-color: #08842b;
-                // }
-            }
-
-            .subscribe_wrapper {
-                // background-color: grey;
             }
         }
 
@@ -3785,4 +3765,13 @@ custom-nav {
     }
 }
 
-/****************************************************************footer section css end**************************************************************************************/
+/*
+footer section css start
+*/
+
+/*********************************home page css end *********************************************************/
+
+
+
+/*********************************company page css start *********************************************************/
+/*********************************company page css end *********************************************************/
