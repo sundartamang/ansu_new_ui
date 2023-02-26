@@ -1,7 +1,7 @@
 
 $(function () {
   // Owl Carousel
-  var recompanySearchOwl = $("#recompanySearchOpinion");
+  var recompanySearchOwl = $("#researchOpinion");
   recompanySearchOwl.owlCarousel({
     items: 3,
     margin: 30,
