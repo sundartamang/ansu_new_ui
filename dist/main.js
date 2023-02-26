@@ -228,3 +228,28 @@ document.getElementById('companyClear').onclick = () => {
   document.getElementById('search_icon_wraper').classList.remove("changePosition");
   document.getElementById('companyClear').classList.remove("visible");
 }
+
+/*
+hide and show dorpdown profile menu js start
+*/
+function showDowpDown() {
+  document.getElementById("headerNavDropDown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.profile_dropdown_icon')) {
+
+    var dropdowns = document.getElementsByClassName("header__nav_dropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      console.warn("Click somehere on widnows")
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/*
+hide and show dorpdown profile menu js end
+*/

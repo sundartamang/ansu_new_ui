@@ -693,6 +693,7 @@ header css start
 .header .header__menu-wrapper .header__nav {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  position: relative;
 }
 .header .header__menu-wrapper .header__nav a {
   color: var(--menu_color);
@@ -785,13 +786,19 @@ header css start
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  position: relative;
+  padding-right: 20px;
 }
 .header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper a .user_icon {
-  padding-right: 5px;
+  padding-right: 3px;
 }
 .header .header__menu-wrapper .header__nav .header__nav_right .profile_button_wrapper a .arrow_down {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 5px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0px;
+  height: 100%;
 }
 .header .header__responsive {
   display: none;
@@ -2894,6 +2901,9 @@ footer section css start
 */
 /*********************************home page css end *********************************************************/
 /*********************************company page css start *******************************************************/
+/*
+company navbar section css start
+*/
 #companySearchIcon.hide {
   display: none;
 }
@@ -2937,8 +2947,7 @@ footer section css start
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
-  width: 85%;
-  margin: 0px auto;
+  margin-bottom: 0px;
 }
 .company_navbar .company_navbar__menu .company_navbar__items {
   display: flex;
@@ -2959,8 +2968,39 @@ footer section css start
   }
 }
 /*
-company detail section css start
+company navbar section css end
 */
+.header__nav_dropdown {
+  height: 123px;
+  width: 141px;
+  background: var(--main_color_one);
+  position: absolute;
+  right: 0px;
+  top: 80%;
+  display: none;
+  border-radius: 1px;
+}
+.header__nav_dropdown .header__nav_dropdown__items a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  color: var(--p_color_four) !important;
+  padding: 7px;
+  transition: all 300ms ease-in-out;
+}
+.header__nav_dropdown .header__nav_dropdown__items a i {
+  padding-right: 7px;
+}
+.header__nav_dropdown .header__nav_dropdown__items a:hover {
+  color: var(--placeholder_color);
+}
+
+.header__nav_dropdown.show {
+  display: block;
+}
+
 .company_detial {
   height: 700px;
 }
