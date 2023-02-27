@@ -3291,6 +3291,10 @@ company navbar section css end
   border-radius: 5px;
   height: 196px;
 }
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__chart_wrapper img {
+  max-height: 195px;
+  width: 100%;
+}
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__valuation_wrapper {
   position: relative;
   margin-top: 15px;
@@ -3311,6 +3315,8 @@ company navbar section css end
   grid-template-columns: 2fr 2fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__valuation_wrapper .company_detail__valuation_body p {
   margin-bottom: 10px !important;
@@ -3331,12 +3337,17 @@ company navbar section css end
   color: #535457;
   transform: rotate(-90deg);
   position: absolute;
+  left: -45px;
+  top: 39%;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__valuation_wrapper .company_detail__valuation_body .valuation_body_left p {
   font-size: 11px;
   font-weight: 500;
   line-height: 15px;
   cursor: pointer;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__valuation_wrapper .company_detail__valuation_body .valuation_body_left .valution_star_wrapper {
+  padding-left: 22px;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__valuation_wrapper .company_detail__valuation_body .valuation_body_right p {
   font-family: "Poppins";

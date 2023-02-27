@@ -78,7 +78,7 @@ body.active {
     overflow-y: hidden;
 }
 
-.mt-10{
+.mt-10 {
     margin-top: 10px;
 }
 
@@ -4350,7 +4350,7 @@ company navbar section css end
                         // font-family: 'Poppins';
                         // font-style: normal;
                         // font-weight: 400;
-                        // font-size: 14px;
+                        // font-size: 13px !important;
                         // line-height: 18px;
                         // color: #716B6B;
                     }
@@ -4369,6 +4369,11 @@ company navbar section css end
                     border: 1px solid #EDE9E9;
                     border-radius: 5px;
                     height: 196px;
+
+                    img{
+                        max-height: 195px;
+                        width: 100%;
+                    }
                 }
 
                 .company_detail__valuation_wrapper {
@@ -4399,6 +4404,8 @@ company navbar section css end
                         grid-template-columns: 2fr 2fr;
                         // column-gap: 55px;
                         column-gap: 30px;
+                        overflow-y:auto;
+                        overflow-x:hidden;
                         // background-color: red;
 
                         p {
@@ -4406,6 +4413,7 @@ company navbar section css end
                         }
 
                         .valuation_body_left {
+
                             display: flex;
                             flex-direction: column;
                             position: relative;
@@ -4421,6 +4429,9 @@ company navbar section css end
                                 color: #535457;
                                 transform: rotate(-90deg);
                                 position: absolute;
+
+                                left: -45px;
+                                top: 39%;
                             }
 
                             p {
@@ -4429,6 +4440,10 @@ company navbar section css end
                                 font-weight: 500;
                                 line-height: 15px;
                                 cursor: pointer;
+                            }
+
+                            .valution_star_wrapper{
+                                padding-left: 22px;
                             }
                         }
 
