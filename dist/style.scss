@@ -78,6 +78,10 @@ body.active {
     overflow-y: hidden;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -639,6 +643,14 @@ custom-nav {
             color: #cecece;
         }
     }
+}
+
+.star_color {
+    color: #FFC700;
+}
+
+.star_no_color {
+    color: #B7B6B2;
 }
 
 .premium_features {
@@ -4238,7 +4250,7 @@ company navbar section css end
             min-height: 100px;
             padding: 0px 20px;
             display: grid;
-            grid-template-columns: 2.7fr 1.3fr;
+            grid-template-columns: 2.9fr 1.1fr;
             column-gap: 7px;
 
 
@@ -4350,9 +4362,144 @@ company navbar section css end
             }
 
             .company_detail__body_right {
-                background-color: orange;
-                height: 30px;
-                padding: 5px 9px;
+                // background-color: orange;
+
+                .company_detail__chart_wrapper {
+                    background: var(--p_color_four);
+                    border: 1px solid #EDE9E9;
+                    border-radius: 5px;
+                    height: 196px;
+                }
+
+                .company_detail__valuation_wrapper {
+                    position: relative;
+                    margin-top: 15px;
+                    height: 198px;
+                    background: var(--p_color_four);
+                    border: 1px solid #EDE9E9;
+                    border-radius: 5px;
+                    // background-color: purple;
+                    padding: 10px;
+
+                    .company_detail__valuation_header {
+                        // background-color: green;
+
+                        h4 {
+                            font-weight: 500 !important;
+                            font-size: 15px !important;
+                            line-height: 22px !important;
+                            text-align: center;
+                            // padding: 10px 0px !important;
+                        }
+                    }
+
+                    .company_detail__valuation_body {
+                        // height: 121px;
+                        display: grid;
+                        grid-template-columns: 2fr 2fr;
+                        // column-gap: 55px;
+                        column-gap: 30px;
+                        // background-color: red;
+
+                        p {
+                            margin-bottom: 10px !important;
+                        }
+
+                        .valuation_body_left {
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            display: inline-block;
+
+                            .company_name {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 11px;
+                                line-height: 16px;
+                                text-align: left;
+                                color: #535457;
+                                transform: rotate(-90deg);
+                                position: absolute;
+                            }
+
+                            p {
+                                // margin-bottom: 0px !important;
+                                font-size: 11px;
+                                font-weight: 500;
+                                line-height: 15px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .valuation_body_right {
+                            // background-color: red;
+
+                            p {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 11px;
+                                line-height: 15px;
+                                text-align: center;
+                                color: #CCC5C5;
+                                cursor: pointer;
+                                // margin-bottom: 11px;
+                                transition: all 400ms ease-in-out;
+                            }
+
+                            p:hover {
+                                text-align: center;
+                                font-weight: 600;
+                                color: #0C2755;
+                                background: #FFFFFF;
+                                border: 1px solid #EEECEC;
+                                box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+
+                .company_detail__research_wrapper {
+                    position: relative;
+                    margin-top: 15px;
+                    height: 379px;
+                    background: var(--p_color_four);
+                    border: 1px solid #EDE9E9;
+                    border-radius: 5px;
+
+                    h4 {
+                        font-weight: 500 !important;
+                        font-size: 15px !important;
+                        line-height: 22px !important;
+                        text-align: center;
+                        // padding: 10px 0px !important;
+                    }
+
+                    .company_detail__research_body {
+                        .news_alert {
+                            height: 40px;
+                            background: var(--p_color_four);
+                            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+                            border-left: 3px solid #0A0955;
+                            cursor: pointer;
+
+                            p {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #032033;
+                                padding: 0px 10px;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
             }
 
 
