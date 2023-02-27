@@ -620,16 +620,22 @@ custom-nav .owl-next i {
   top: 70%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  width: 307px;
+  height: 67px;
 }
 
 .premium_features__wrapper {
-  background: #071630;
-  width: 307px;
-  height: 67px;
-  box-sizing: content-box;
-  padding-top: 15px;
-  position: relative;
-  padding: 0px 15px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0px !important;
+  background: url("../img/premium.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px !important;
 }
 .premium_features__wrapper h4 {
   font-family: "Poppins";
@@ -655,18 +661,6 @@ custom-nav .owl-next i {
   display: flex;
   align-items: start;
   height: 50%;
-}
-
-.premium_features__wrapper:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-right: 50px solid var(--p_color_four);
-  border-top: 33px solid transparent;
-  border-bottom: 33px solid transparent;
 }
 
 /*****owl carousel css end*****/
@@ -3260,6 +3254,34 @@ company navbar section css end
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment {
   height: 237px;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody {
+  position: relative;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody tr {
+  height: 50px !important;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody td {
+  background: rgba(3, 32, 51, 0.71);
+  border: 1px solid #E0E0E0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody td:nth-child(1) {
+  background-color: var(--p_color_four) !important;
+  border: 0px solid var(--p_color_four) !important;
+  padding: 0px;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody td:nth-child(1) span {
+  transform: rotate(-90deg) !important;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody tr:nth-child(4) td {
+  background-color: var(--p_color_four) !important;
+  border: 0px solid var(--p_color_four) !important;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .company_description {
   height: auto;

@@ -659,16 +659,30 @@ custom-nav {
     top: 70%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    width: 307px;
+    height: 67px;
 }
 
 .premium_features__wrapper {
-    background: #071630;
-    width: 307px;
-    height: 67px;
-    box-sizing: content-box;
-    padding-top: 15px;
-    position: relative;
-    padding: 0px 15px;
+    // position: relative;
+    // padding: 0px 15px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px !important;
+    background: url('../img/premium.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px !important;
+
+    // img{
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    // }
 
 
     h4 {
@@ -701,18 +715,6 @@ custom-nav {
     }
 }
 
-
-.premium_features__wrapper:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-right: 50px solid var(--p_color_four);
-    border-top: 33px solid transparent;
-    border-bottom: 33px solid transparent;
-}
 
 /*****owl carousel css end*****/
 @media only screen and (max-width: 1126px) {
@@ -4321,6 +4323,47 @@ company navbar section css end
 
                     .table_wrapper__investment {
                         height: 237px;
+
+                        .investment_style_wrapper {
+                            tbody {
+                                position: relative;
+
+                                tr {
+                                    height: 50px !important;
+                                }
+
+                                td {
+                                    background: rgba(3, 32, 51, 0.71);
+                                    border: 1px solid #E0E0E0;
+
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    text-align: center;
+                                }
+
+                                td:nth-child(1) {
+                                    background-color: var(--p_color_four) !important;
+                                    border: 0px solid var(--p_color_four) !important;
+                                    padding: 0px;
+                                    // position: relative;
+
+                                    span {
+                                        // position: absolute;
+                                        transform: rotate(-90deg) !important;
+                                    }
+                                }
+
+                                tr:nth-child(4) {
+                                    td {
+                                        background-color: var(--p_color_four) !important;
+                                        border: 0px solid var(--p_color_four) !important;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -4370,7 +4413,7 @@ company navbar section css end
                     border-radius: 5px;
                     height: 196px;
 
-                    img{
+                    img {
                         max-height: 195px;
                         width: 100%;
                     }
@@ -4404,8 +4447,8 @@ company navbar section css end
                         grid-template-columns: 2fr 2fr;
                         // column-gap: 55px;
                         column-gap: 30px;
-                        overflow-y:auto;
-                        overflow-x:hidden;
+                        overflow-y: auto;
+                        overflow-x: hidden;
                         // background-color: red;
 
                         p {
@@ -4442,7 +4485,7 @@ company navbar section css end
                                 cursor: pointer;
                             }
 
-                            .valution_star_wrapper{
+                            .valution_star_wrapper {
                                 padding-left: 22px;
                             }
                         }
