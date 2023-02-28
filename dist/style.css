@@ -425,6 +425,10 @@ input:focus {
   transition: all 300ms ease-in-out;
 }
 
+.tr_color {
+  background-color: #F1F7FF;
+}
+
 .owl-item {
   cursor: pointer;
 }
@@ -501,8 +505,11 @@ input:focus {
 }
 
 .nav li:hover a {
-  border: none;
   background: none;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
 }
 
 .remove_row_margin {
@@ -3028,9 +3035,6 @@ company navbar section css start
     width: 95%;
   }
 }
-/*
-company navbar section css end
-*/
 .header__nav_dropdown {
   height: 127px;
   width: 141px;
@@ -3062,6 +3066,12 @@ company navbar section css end
   display: block;
 }
 
+/*
+company navbar section css end
+*/
+/*
+company detail section css start
+*/
 .company_detail {
   height: auto;
   min-height: 980px;
@@ -3273,6 +3283,8 @@ company navbar section css end
   font-size: 12px;
   line-height: 14px;
   text-align: center;
+  width: 40px;
+  padding: 0px;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody td:nth-child(1) {
   background-color: var(--p_color_four) !important;
@@ -3431,4 +3443,139 @@ company navbar section css end
   align-items: center;
 }
 
+/*
+company detail section css end
+*/
+/*
+view sheet  section css start
+*/
+.viewsheet {
+  height: auto;
+  min-height: 436px;
+  margin-top: 40px;
+  margin-bottom: 300px;
+}
+.viewsheet .viewsheet_wrapper {
+  background: var(--p_color_four);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  height: auto;
+  position: relative;
+}
+.viewsheet .viewsheet_wrapper ul {
+  height: 57px;
+}
+.viewsheet .viewsheet_wrapper ul li {
+  height: 100%;
+}
+.viewsheet .viewsheet_wrapper ul li a {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--main_color_one);
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body {
+  height: auto;
+  margin-bottom: 59px;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab {
+  height: auto;
+  min-height: 320px;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header {
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 10px 20px;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .annual_btn {
+  height: 22px;
+  width: 151px;
+  background: #032032;
+  border: 0.5px solid #D6D2D2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  cursor: pointer;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .quaterly_btn {
+  height: 22px;
+  width: 151px;
+  background: var(--p_color_four);
+  border: 0.5px solid #BBB8B8;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #032032;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+  margin-top: 36px;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper {
+  height: 260px;
+  margin-left: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-bottom: 59px;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table {
+  height: 100%;
+  width: 100%;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table thead tr {
+  border-bottom: 1px solid #D9D8D8;
+  background-color: var(--p_color_four);
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table td {
+  padding: 8px 5px !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #818185;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_chart {
+  height: 260px;
+  background: #FEFEFE;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 22px;
+}
+.viewsheet .viewsheet_wrapper .view_all_btn {
+  padding-top: 59px;
+}
+.viewsheet .nav-link.active {
+  background-color: var(--p_color_four);
+  box-shadow: none !important;
+  border: 0px;
+  border-bottom: 2px solid var(--button_color) !important;
+}
+
+/*
+view sheet  section css end
+*/
 /*********************************company page css end *********************************************************//*# sourceMappingURL=style.css.map */
