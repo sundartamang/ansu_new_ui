@@ -517,6 +517,60 @@ input:focus {
   margin-right: 0px !important;
 }
 
+.annual_btn {
+  height: 22px;
+  width: 151px;
+  background: #032032;
+  border: 0.5px solid #032032;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+}
+
+.annual_btn:hover {
+  opacity: 0.9;
+  color: var(--p_color_three);
+  background-color: #02111a;
+  border: 0.5px solid #02111a;
+}
+
+.quaterly_btn {
+  height: 22px;
+  width: 151px;
+  background: var(--p_color_four);
+  border: 0.5px solid #BBB8B8;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #032032;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+}
+
+.quaterly_btn:hover {
+  opacity: 0.9;
+  color: var(--main_color_one);
+}
+
+.number_color {
+  color: #606062 !important;
+}
+
 .owl-prev {
   position: absolute;
   left: -20px;
@@ -2274,7 +2328,7 @@ market sentiment section css start
   margin-top: 40px;
   height: 100%;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2.4fr 1.6fr;
   -moz-column-gap: 22px;
        column-gap: 22px;
 }
@@ -2758,7 +2812,6 @@ footer section css start
 .footer {
   height: auto;
   min-height: 313px;
-  margin-top: 10px;
   background: var(--main_color_two);
   padding-bottom: 1px;
 }
@@ -3494,38 +3547,6 @@ view sheet  section css start
        column-gap: 30px;
   padding: 10px 20px;
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .annual_btn {
-  height: 22px;
-  width: 151px;
-  background: #032032;
-  border: 0.5px solid #D6D2D2;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  color: var(--p_color_four);
-  cursor: pointer;
-}
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .quaterly_btn {
-  height: 22px;
-  width: 151px;
-  background: var(--p_color_four);
-  border: 0.5px solid #BBB8B8;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  color: #032032;
-}
 .viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body {
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
@@ -3578,4 +3599,68 @@ view sheet  section css start
 /*
 view sheet  section css end
 */
-/*********************************company page css end *********************************************************//*# sourceMappingURL=style.css.map */
+/*********************************company page css end *********************************************************/
+/*********************************company page css end *********************************************************/
+/*
+view full sheet section css start
+*/
+.view_full_sheet {
+  height: auto;
+  min-height: 796px;
+  padding: 30px 0px;
+  position: relative;
+  background-color: #F1F7FF;
+}
+.view_full_sheet .view_full_sheet__wrapper {
+  background: var(--p_color_four);
+  display: flex;
+  flex-direction: column;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 15px;
+  height: 70px;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body {
+  padding: 0px 15px;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table {
+  height: 100%;
+  width: 100%;
+  transition: height 600ms ease-in-out;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table thead tr {
+  border-bottom: 1px solid #D9D8D8;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table tr td {
+  padding: 8px 5px !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C8888;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table tr td img {
+  cursor: pointer;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table tr .name_container {
+  width: 300px;
+}
+.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__footer {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding: 15px;
+  height: 103px;
+}
+
+/*
+view full sheet section css end
+*//*# sourceMappingURL=style.css.map */

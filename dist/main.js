@@ -253,3 +253,20 @@ window.onclick = function (event) {
 /*
 hide and show dorpdown profile menu js end
 */
+
+
+// expand and collpase table row
+// document.getElementById('expandTableRow').onclick = () => {
+//   console.log("I am clicked... expandTableRow")
+
+//   var w = $("#collpaseTableRow");
+
+//   if(w.hasClass('visible')) {
+//     w.removeClass('visible');
+//   } else {
+//     w.addClass('visible');
+//   }
+
+
+//   // document.getElementById('collpaseTableRow').classList.add("visible");
+// }

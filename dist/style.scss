@@ -198,8 +198,6 @@ ul {
 }
 
 
-
-
 textarea {
     &:focus {
         outline: none;
@@ -548,7 +546,63 @@ input {
     margin-right: 0px !important;
 }
 
+.annual_btn {
+    height: 22px;
+    width: 151px;
+    background: #032032;
+    border: 0.5px solid #032032;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--p_color_four);
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    opacity: 1;
+}
+
+.annual_btn:hover {
+    opacity: 0.9;
+    color: var(--p_color_three);
+    background-color: #02111a;
+    border: 0.5px solid #02111a
+}
+
+.quaterly_btn {
+    height: 22px;
+    width: 151px;
+    background: var(--p_color_four);
+    border: 0.5px solid #BBB8B8;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #032032;
+    transition: all 500ms ease-in-out;
+    opacity: 1;
+}
+
+.quaterly_btn:hover {
+    opacity: 0.9;
+    color: var(--main_color_one);
+    // background-color: #fafafa;
+    // border: 0.5px solid #fafafa;
+}
+
+.number_color{
+    color: #606062 !important;
+}
 .owl-prev {
     position: absolute;
     left: -20px;
@@ -3016,7 +3070,7 @@ market sentiment section css start
             margin-top: 40px;
             height: 100%;
             display: grid;
-            grid-template-columns: 2fr 2fr;
+            grid-template-columns: 2.4fr 1.6fr;
             column-gap: 22px;
 
             p {
@@ -3689,7 +3743,7 @@ footer section css start
 .footer {
     height: auto;
     min-height: 313px;
-    margin-top: 10px;
+    // margin-top: 10px;
     background: var(--main_color_two);
     padding-bottom: 1px;
 
@@ -4637,41 +4691,7 @@ view sheet  section css start
                     column-gap: 30px;
                     padding: 10px 20px;
 
-                    .annual_btn {
-                        height: 22px;
-                        width: 151px;
-                        background: #032032;
-                        border: 0.5px solid #D6D2D2;
-                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
-                        border-radius: 5px;
 
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 14px;
-                        text-align: center;
-                        color: var(--p_color_four);
-                        cursor: pointer;
-                    }
-
-                    .quaterly_btn {
-                        height: 22px;
-                        width: 151px;
-                        background: var(--p_color_four);
-                        border: 0.5px solid #BBB8B8;
-                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-                        border-radius: 5px;
-                        cursor: pointer;
-
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 14px;
-                        text-align: center;
-                        color: #032032;
-                    }
                 }
 
                 .viewsheet_tab__body {
@@ -4743,3 +4763,87 @@ view sheet  section css end
 
 
 /*********************************company page css end *********************************************************/
+
+
+
+
+/*********************************company page css end *********************************************************/
+/*
+view full sheet section css start
+*/
+.view_full_sheet {
+    height: auto;
+    min-height: 796px;
+    padding: 30px 0px;
+    position: relative;
+    background-color: #F1F7FF;
+
+    .view_full_sheet__wrapper {
+        background: var(--p_color_four);
+        // background-color: orange;
+        display: flex;
+        flex-direction: column;
+
+
+        .view_full_sheet__header {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            column-gap: 30px;
+            padding: 15px;
+            height: 70px;
+            // background-color: purple;
+        }
+
+        .view_full_sheet__body {
+            // background-color: orange;
+            padding: 0px 15px;
+
+            .view_full_sheet__table {
+                height: 100%;
+                width: 100%;
+                transition: height 600ms ease-in-out;
+
+                thead{
+                    tr{
+                        border-bottom: 1px solid #D9D8D8;
+                    }
+                }
+
+                tr {
+                    td {
+                        padding: 8px 5px !important;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        // font-weight: 500; // read weight
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #8C8888;
+                        img{
+                            cursor: pointer;
+                        }
+                    }
+                    .name_container{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+
+        .view_full_sheet__footer {
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            column-gap: 5px;
+            padding: 15px;
+            height: 103px;
+            // background-color: green;
+        }
+    }
+}
+
+
+/*
+view full sheet section css end
+*/
