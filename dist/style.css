@@ -308,6 +308,15 @@ input:focus {
   color: var(--table_color);
 }
 
+.regular_header_five {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--main_color_one);
+}
+
 .regular_text {
   font-family: "Poppins";
   font-style: normal;
@@ -346,6 +355,29 @@ input:focus {
   text-align: center;
   letter-spacing: 0.09em;
   color: #8D8585;
+}
+
+.regular_text_five {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #716B6B;
+}
+
+.regular_text_six {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #032033;
+}
+
+.text_dark {
+  color: #000000;
 }
 
 .text-center {
@@ -425,8 +457,23 @@ input:focus {
   transition: all 300ms ease-in-out;
 }
 
+.table_space {
+  height: 100%;
+  width: 100%;
+}
+
 .tr_color {
   background-color: #F1F7FF;
+}
+
+.td_space {
+  padding: 8px 5px !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C8888;
 }
 
 .owl-item {
@@ -3282,7 +3329,7 @@ company detail section css start
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__header h4 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   display: flex;
   align-items: center;
@@ -3330,12 +3377,6 @@ company detail section css start
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_left .table_wrapper .table_wrapper__investment .investment_style_wrapper tbody td {
   background: rgba(3, 32, 51, 0.71);
   border: 1px solid #E0E0E0;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
   width: 40px;
   padding: 0px;
 }
@@ -3506,7 +3547,6 @@ view sheet  section css start
   height: auto;
   min-height: 436px;
   margin-top: 40px;
-  margin-bottom: 300px;
 }
 .viewsheet .viewsheet_wrapper {
   background: var(--p_color_four);
@@ -3570,15 +3610,6 @@ view sheet  section css start
   border-bottom: 1px solid #D9D8D8;
   background-color: var(--p_color_four);
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table td {
-  padding: 8px 5px !important;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #818185;
-}
 .viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_chart {
   height: 260px;
   background: #FEFEFE;
@@ -3599,8 +3630,103 @@ view sheet  section css start
 /*
 view sheet  section css end
 */
+/*
+comapny detail caluation css start
+*/
+.company_detail__valuation_table {
+  height: 518px;
+  margin-bottom: 300px;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 26px 30px;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  height: auto;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_left h4 {
+  font-size: 18px !important;
+  line-height: 21px !important;
+  margin-bottom: 0px !important;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_left p {
+  margin-top: 6px;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  color: #818185 !important;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_right .nav-tabs {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  border: none !important;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_right .nav-tabs .nav-item .nav-link {
+  height: 22px;
+  width: 151px;
+  background: var(--p_color_four);
+  border: 0.5px solid #BBB8B8;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #032032;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_header .valuation_header_right .nav-tabs .nav-item .nav-link.active {
+  height: 22px;
+  width: 151px;
+  background: #032032;
+  border: 0.5px solid #032032;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_body {
+  margin-top: 30px;
+}
+.company_detail__valuation_table .company_detail__valuation_table_wrapper .company_detail__valuation_table_body table {
+  height: 100%;
+  width: 100%;
+}
+
+/*
+comapny detail caluation css end
+*/
 /*********************************company page css end *********************************************************/
-/*********************************company page css end *********************************************************/
+/*********************************view full sheet css start*********************************************************/
 /*
 view full sheet section css start
 */
@@ -3636,15 +3762,6 @@ view full sheet section css start
 .view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table thead tr {
   border-bottom: 1px solid #D9D8D8;
 }
-.view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table tr td {
-  padding: 8px 5px !important;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8C8888;
-}
 .view_full_sheet .view_full_sheet__wrapper .view_full_sheet__body .view_full_sheet__table tr td img {
   cursor: pointer;
 }
@@ -3663,4 +3780,5 @@ view full sheet section css start
 
 /*
 view full sheet section css end
-*//*# sourceMappingURL=style.css.map */
+*/
+/*********************************view full sheet css end*********************************************************//*# sourceMappingURL=style.css.map */
