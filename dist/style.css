@@ -14,7 +14,7 @@
   --tertiary_warning: #F99808;
   --success_text: #08BE30;
   --main_color_one: #032033;
-  --main_color_one_hover: #071630;
+  --main_color_one_hover: #02111b;
   --main_color_two: #071630;
   --main_color_three: #091734;
   --button_color: #0C2755;
@@ -206,14 +206,12 @@ input:focus {
   border-radius: 5px;
   color: #F5F5F5 !important;
   cursor: pointer;
-  transition: all 0ms ease-in-out;
-  opacity: 0.9;
+  transition: all 300ms ease-in-out;
 }
 
 .main_btn:hover {
-  background-color: #070c30;
+  background-color: var(--main_color_one_hover);
   color: var(--p_color_three);
-  opacity: 1;
 }
 
 .success_btn {
@@ -433,7 +431,6 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.93;
   transition: all 300ms ease-in-out;
   border: 0px solid black;
 }
@@ -442,7 +439,6 @@ input:focus {
   background-color: var(--main_color_one_hover);
   color: var(--p_color_three);
   border: none;
-  opacity: 1;
 }
 
 .create_btn {
@@ -455,6 +451,9 @@ input:focus {
   color: var(--p_color_four);
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .table_space {
@@ -1491,7 +1490,7 @@ research and opinion css end
 }
 .responsive_news .responsive_news__body .owl-carousel .item .icon_wrapper {
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   right: 10px;
 }
 .responsive_news .responsive_news__body .owl-carousel .item .icon_wrapper .read_more_btn {
@@ -1908,7 +1907,7 @@ companion section css start
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 .compantion_container .compantion_container__wrapper .signup h4 {
   font-family: "Poppins";
@@ -2054,7 +2053,7 @@ corporate section css start
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item .owl-carousel__body .icon_wrapper {
   position: absolute;
   right: 10px;
-  bottom: 3px;
+  bottom: 10px;
 }
 .coroperater .coroperater__wrapper .coroperater__left .news_wrapper .news_wrapper__body .item .owl-carousel__body .icon_wrapper .read_more_btn {
   margin-top: 0px;
@@ -2102,7 +2101,7 @@ corporate section css start
   padding: 0px 14px;
   cursor: pointer;
   transition: all 400ms ease-in-out;
-  opacity: 0.9;
+  opacity: 1;
 }
 .coroperater .coroperater__wrapper .coroperater__left .corperate_wrapper .corperate_wrapper__body .news_alert .news_alert__header {
   font-family: "Poppins";
@@ -2122,8 +2121,8 @@ corporate section css start
 }
 .coroperater .coroperater__wrapper .coroperater__left .corperate_wrapper .corperate_wrapper__body .news_alert:hover {
   transform: scale(1.009);
-  opacity: 1;
   font-weight: 600;
+  opacity: 0.9;
 }
 .coroperater .coroperater__wrapper .coroperater__right {
   width: 100%;
@@ -2502,11 +2501,9 @@ market sentiment section css start
   color: var(--p_color_four);
   cursor: pointer;
   transition: all 300ms ease-in-out;
-  opacity: 0.9;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer button:hover {
   background-color: #050d1e;
-  opacity: 1;
 }
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_sentiment .market_sentiment__footer .invertor_form {
   display: grid;
