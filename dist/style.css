@@ -1896,6 +1896,9 @@ martket endicator  css start
     width: 95%;
     margin: 0px auto;
   }
+  .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content .premium_wrapper {
+    right: -2%;
+  }
   .market_indicator {
     margin-top: 22px;
     height: auto;
@@ -1967,7 +1970,7 @@ companion section css start
   color: #091734 !important;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1199px) {
+@media only screen and (max-width: 767px) {
   .compantion_container .compantion_container__wrapper .description h4 {
     font-weight: 400;
     font-size: 15px;
@@ -1978,6 +1981,18 @@ companion section css start
     font-size: 12px;
     line-height: 18px;
     display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .compantion_container .compantion_container__wrapper .description h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .compantion_container .compantion_container__wrapper .description p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
   }
   .compantion_container .compantion_container__wrapper .signup h4 {
     font-weight: 400;

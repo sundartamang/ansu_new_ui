@@ -2452,6 +2452,16 @@ martket endicator  css start
                     margin: 0px auto;
                 }
             }
+
+            .market_indicator__valuation {
+                .valuation_body {
+                    .table-content{
+                        .premium_wrapper{
+                            right: -2%;
+                        }
+                    }
+                }
+            }
         }
 
     }
@@ -2543,7 +2553,7 @@ companion section css start
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1199px) {
+@media only screen and (max-width: 767px){
     .compantion_container {
         .compantion_container__wrapper {
             .description {
@@ -2558,6 +2568,27 @@ companion section css start
                     font-size: 12px;
                     line-height: 18px;
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+    .compantion_container {
+        .compantion_container__wrapper {
+            .description {
+                h4 {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+
                 }
             }
 
