@@ -1551,6 +1551,10 @@ our product section css start
   align-items: center;
   margin-top: 10px;
 }
+.product_container .product_container__wrapper .product_box img {
+  width: 45px !important;
+  height: 37px !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 1152px) {
   .product_container .product_container__wrapper {
     display: flex;
@@ -2197,12 +2201,12 @@ corporate section css start
   position: relative;
 }
 .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .dividends {
-  margin-top: 30px;
+  margin-top: 34px;
   border-radius: 10px;
   position: relative;
 }
 .coroperater .coroperater__wrapper .coroperater__right .investing_wrapper .agm_svm {
-  margin-top: 30px;
+  margin-top: 34px;
   border-radius: 10px !important;
   position: relative;
 }
