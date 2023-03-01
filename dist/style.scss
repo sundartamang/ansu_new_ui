@@ -390,7 +390,7 @@ input {
     color: #032033;
 }
 
-.text_dark{
+.text_dark {
     color: #000000;
 }
 
@@ -419,7 +419,8 @@ input {
 .card_header {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    // font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     color: var(--main_color_one);
@@ -826,6 +827,17 @@ custom-nav {
     }
 }
 
+.nav-tabs {
+    .nav-item {
+        .nav-link.active {}
+    }
+
+}
+
+
+
+
+
 
 /*****owl carousel css end*****/
 @media only screen and (max-width: 1126px) {
@@ -957,6 +969,7 @@ header css start
                 font-size: 16px;
                 line-height: 19px;
                 font-family: 'Roboto';
+                font-style: 'normal';
             }
 
             .header__nav_left {
@@ -1544,16 +1557,18 @@ research and opinion css start
                 .market_wrapper__body {
                     margin-top: 39px;
                     height: 381px;
-                    border-top-right-radius: 10px;
-                    border-top-left-radius: 10px;
+                    border-radius: 10px;
+                    // border-top-right-radius: 10px;
+                    // border-top-left-radius: 10px;
                     box-shadow: 0 0 14px 0 rgb(74 74 74 / 20%);
                     border: 1px solid rgb(74 74 74 / 20%);
 
                     .item {
                         height: 381px;
+                        border-radius: 10x;
 
-                        border-top-right-radius: 10px;
-                        border-top-left-radius: 10px;
+                        // border-top-right-radius: 10px;
+                        // border-top-left-radius: 10px;
 
                         .chart_header_wrapper {
                             height: 46px;
@@ -2327,6 +2342,54 @@ martket endicator  css start
                         color: #CAC8C1 !important;
                     }
                 }
+
+                .table-content {
+                    position: relative;
+
+                    .premium_wrapper {
+                        width: 150px;
+                        height: 50px;
+                        position: absolute;
+                        right: -5%;
+                        top: 45%;
+
+                        .premium_wrapper_img {
+                            width: 150px;
+                            height: 49px;
+                            background: url('../img/premium_two.png') no-repeat;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            h6 {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #FFFFFF;
+                                text-align: center;
+                                margin-bottom: 0px;
+                            }
+
+                            p {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #FFBA0A;
+                                text-align: center;
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                    }
+                }
             }
 
             .button_wrapper {
@@ -2715,7 +2778,7 @@ corporate section css start
                         cursor: pointer;
                         transition: all 400ms ease-in-out;
                         opacity: 1;
-               
+
 
                         .news_alert__header {
                             font-family: 'Poppins';

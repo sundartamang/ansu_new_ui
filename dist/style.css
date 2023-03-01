@@ -403,7 +403,7 @@ input:focus {
 .card_header {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   color: var(--main_color_one);
@@ -869,6 +869,7 @@ header css start
   font-size: 16px;
   line-height: 19px;
   font-family: "Roboto";
+  font-style: "normal";
 }
 .header .header__menu-wrapper .header__nav .header__nav_left {
   height: 100%;
@@ -1287,15 +1288,13 @@ research and opinion css start
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body {
   margin-top: 39px;
   height: 381px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10px;
   box-shadow: 0 0 14px 0 rgba(74, 74, 74, 0.2);
   border: 1px solid rgba(74, 74, 74, 0.2);
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item {
   height: 381px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10x;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item .chart_header_wrapper {
   height: 46px;
@@ -1807,6 +1806,48 @@ martket endicator  css start
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .valuation__table .fa_half {
   color: #CAC8C1 !important;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content {
+  position: relative;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content .premium_wrapper {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  right: -5%;
+  top: 45%;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content .premium_wrapper .premium_wrapper_img {
+  width: 150px;
+  height: 49px;
+  background: url("../img/premium_two.png") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content .premium_wrapper .premium_wrapper_img h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.market_indicator .market_indicator__wrapper .market_indicator__valuation .valuation_body .table-content .premium_wrapper .premium_wrapper_img p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFBA0A;
+  text-align: center;
+  margin-bottom: 0px;
 }
 .market_indicator .market_indicator__wrapper .market_indicator__valuation .button_wrapper {
   position: absolute;
