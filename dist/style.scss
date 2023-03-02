@@ -492,6 +492,9 @@ input {
 .tr_color {
     background-color: #F1F7FF;
 }
+.tr_color_two{
+    background-color: #D8E9FF;
+}
 
 .td_space {
     padding: 8px 5px !important;
@@ -5154,7 +5157,7 @@ comapny detail financial css start
     height: auto;
     min-height: 374px;
     margin-top: 40px;
-    margin-bottom: 300px;
+
 
     .comapny_detail_financial__wrapper {
         background: var(--p_color_four);
@@ -5196,7 +5199,8 @@ comapny detail financial css start
                         line-height: 18px;
                         color: #8C8888;
                     }
-                    .number_color{
+
+                    .number_color {
                         font-weight: 500 !important;
                         color: #5A5959 !important
                     }
@@ -5209,6 +5213,53 @@ comapny detail financial css start
 /*
 comapny detail financial css end
 */
+
+
+/*
+operating performance css start
+*/
+.operating_performance {
+    height: auto;
+    min-height: 552px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+
+    .operating_performance__wrapper {
+        background: var(--p_color_four);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 30px 25px;
+
+        .operating_performance__body{
+            margin-top: 35px;
+
+            table{
+                .name_container {
+                    width: 300px;
+                }
+
+                tbody{
+                    tr{
+                        td{
+                            position: relative;
+                            img{
+                                cursor: pointer !important;
+                                position: absolute;
+                                left: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+operating performance css end
+*/
+
 
 
 /*********************************company page css end *********************************************************/

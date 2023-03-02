@@ -475,6 +475,10 @@ input:focus {
   background-color: #F1F7FF;
 }
 
+.tr_color_two {
+  background-color: #D8E9FF;
+}
+
 .td_space {
   padding: 8px 5px !important;
   font-family: "Roboto";
@@ -3874,7 +3878,6 @@ comapny detail financial css start
   height: auto;
   min-height: 374px;
   margin-top: 40px;
-  margin-bottom: 300px;
 }
 .comapny_detail_financial .comapny_detail_financial__wrapper {
   background: var(--p_color_four);
@@ -3916,6 +3919,39 @@ comapny detail financial css start
 
 /*
 comapny detail financial css end
+*/
+/*
+operating performance css start
+*/
+.operating_performance {
+  height: auto;
+  min-height: 552px;
+  margin-top: 40px;
+  margin-bottom: 300px;
+}
+.operating_performance .operating_performance__wrapper {
+  background: var(--p_color_four);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px 25px;
+}
+.operating_performance .operating_performance__wrapper .operating_performance__body {
+  margin-top: 35px;
+}
+.operating_performance .operating_performance__wrapper .operating_performance__body table .name_container {
+  width: 300px;
+}
+.operating_performance .operating_performance__wrapper .operating_performance__body table tbody tr td {
+  position: relative;
+}
+.operating_performance .operating_performance__wrapper .operating_performance__body table tbody tr td img {
+  cursor: pointer !important;
+  position: absolute;
+  left: 10%;
+}
+
+/*
+operating performance css end
 */
 /*********************************company page css end *********************************************************/
 /*********************************view full sheet css start*********************************************************/
