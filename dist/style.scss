@@ -390,6 +390,16 @@ input {
     color: #032033;
 }
 
+.regular_text_seven {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #818185;
+}
+
 .text_dark {
     color: #000000;
 }
@@ -1720,7 +1730,7 @@ research and opinion css start
                     background: #FFFFFF;
                     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
 
-                    .view_all_button{
+                    .view_all_button {
                         display: block;
                     }
 
@@ -4997,7 +5007,6 @@ comapny detail caluation css start
 */
 .company_detail__valuation_table {
     height: 518px;
-    margin-bottom: 300px;
 
     .company_detail__valuation_table_wrapper {
         background: #FFFFFF;
@@ -5104,9 +5113,102 @@ comapny detail caluation css start
 }
 
 /*
-comapny detail caluation css end
+comapny detail valuation css end
 */
 
+
+/*
+comapny detail trailing return  css start
+*/
+.company_detail_trailing {
+    height: 331px;
+    margin-top: 40px;
+
+    .company_detail_trailing__wrapper {
+        background: var(--p_color_four);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        position: relative;
+        padding: 30px 20px;
+
+        .company_detail_trailing__header {
+            table {
+                thead {
+                    background: var(--p_color_four);
+                }
+            }
+        }
+    }
+}
+
+/*
+comapny detail trailing css end
+*/
+
+
+
+/*
+comapny detail financial css start
+*/
+.comapny_detail_financial {
+    height: auto;
+    min-height: 374px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+
+    .comapny_detail_financial__wrapper {
+        background: var(--p_color_four);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.03);
+        border-radius: 15px;
+        padding: 40px;
+        position: relative;
+
+        .comapny_detail_financial__body {
+            height: auto;
+            min-height: 219px;
+            background: var(--p_color_four);
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            padding: 33px 0px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+            padding: 10px;
+
+            thead {
+                tr {
+                    td {
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #0C2755;
+                        background-color: #FEFEFE !important;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #8C8888;
+                    }
+                    .number_color{
+                        font-weight: 500 !important;
+                        color: #5A5959 !important
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+comapny detail financial css end
+*/
 
 
 /*********************************company page css end *********************************************************/
