@@ -2508,9 +2508,6 @@ market sentiment section css start
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__header {
-  margin-top: 20px;
-}
 .sentiment .sentiment_wrapper .sentiment_wrapper__body .market_mood .market_mood__body {
   display: flex;
   flex-direction: column;
