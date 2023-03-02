@@ -4,7 +4,7 @@ $(function () {
   var recompanySearchOwl = $("#researchOpinion");
   recompanySearchOwl.owlCarousel({
     items: 3,
-    margin: 30,
+    margin: 25,
     loop: true,
     nav: true,
     responsive: {

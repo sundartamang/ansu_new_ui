@@ -176,7 +176,7 @@ ul {
     height: 100%;
     margin: 0px auto;
     transition: all 300ms ease-in-out;
-    // background-color: yellow;
+    background-color: yellow;
 }
 
 .wrapper_inner {
@@ -1546,7 +1546,9 @@ research and opinion css start
             padding-bottom: 20px;
 
             .market_wrapper {
-                width: 100%;
+                // width: 100%;
+                min-width: 317px;
+                // background-color: red;
 
                 .market_wrapper__header {
                     // height: auto;
@@ -1602,7 +1604,8 @@ research and opinion css start
 
                         ul {
                             display: flex;
-                            justify-content: space-between;
+                            // justify-content: space-between;
+                            justify-content: space-around;
 
                             li {
                                 padding-top: 10px;
@@ -1622,8 +1625,16 @@ research and opinion css start
                                 border-radius: 0px;
                                 position: absolute;
                                 height: 100%;
+                                width: 100%;
 
                                 .table-content {
+                                    height: 100%;
+
+                                    .tab-pane {
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+
                                     .tab-pane.active {
                                         box-shadow: none !important;
                                     }
@@ -1648,14 +1659,44 @@ research and opinion css start
 
                 .item {
                     img {
-                        height: 200px !important;
+                        height: 170px !important;
                     }
                 }
             }
         }
     }
-
 }
+
+@media only screen and (max-width: 1400px) {
+    .research__wrapper_column_right {
+
+        .market_wrapper {
+            min-width: 290px !important;
+            width: 100% !important
+        }
+    }
+
+    .chart_header{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 846px) and (max-width: 991px) {
+    .research__wrapper_column_left {
+
+        .crasoul_wrapper {
+            .crasoul_wrapper__body {
+                .item{
+                    img{
+                        height: 160px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 @media only screen and (min-width: 1619px) and (max-width: 1808px) {
@@ -1987,7 +2028,7 @@ our product section css start
                 margin-top: 10px;
             }
 
-            img{
+            img {
                 width: 45px !important;
                 height: 37px !important;
             }
@@ -2460,8 +2501,8 @@ martket endicator  css start
 
             .market_indicator__valuation {
                 .valuation_body {
-                    .table-content{
-                        .premium_wrapper{
+                    .table-content {
+                        .premium_wrapper {
                             right: -2%;
                         }
                     }
@@ -2558,7 +2599,7 @@ companion section css start
     }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     .compantion_container {
         .compantion_container__wrapper {
             .description {

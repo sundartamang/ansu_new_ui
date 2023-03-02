@@ -167,6 +167,7 @@ ul {
   height: 100%;
   margin: 0px auto;
   transition: all 300ms ease-in-out;
+  background-color: yellow;
 }
 
 .wrapper_inner {
@@ -1280,7 +1281,7 @@ research and opinion css start
   padding-bottom: 20px;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper {
-  width: 100%;
+  min-width: 317px;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__header {
   height: 73px;
@@ -1321,7 +1322,7 @@ research and opinion css start
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item ul li {
   padding-top: 10px;
@@ -1338,6 +1339,14 @@ research and opinion css start
   border-radius: 0px;
   position: absolute;
   height: 100%;
+  width: 100%;
+}
+.research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item .chart_body_wrapper .item .table-content {
+  height: 100%;
+}
+.research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item .chart_body_wrapper .item .table-content .tab-pane {
+  height: 100%;
+  width: 100%;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body .item .chart_body_wrapper .item .table-content .tab-pane.active {
   box-shadow: none !important;
@@ -1345,7 +1354,21 @@ research and opinion css start
 
 @media only screen and (min-width: 2000px) {
   .research__wrapper_column_left .crasoul_wrapper .crasoul_wrapper__body .item img {
-    height: 200px !important;
+    height: 170px !important;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .research__wrapper_column_right .market_wrapper {
+    min-width: 290px !important;
+    width: 100% !important;
+  }
+  .chart_header {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 846px) and (max-width: 991px) {
+  .research__wrapper_column_left .crasoul_wrapper .crasoul_wrapper__body .item img {
+    height: 160px !important;
   }
 }
 @media only screen and (min-width: 1619px) and (max-width: 1808px) {
