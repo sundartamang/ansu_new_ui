@@ -492,7 +492,8 @@ input {
 .tr_color {
     background-color: #F1F7FF;
 }
-.tr_color_two{
+
+.tr_color_two {
     background-color: #D8E9FF;
 }
 
@@ -500,8 +501,8 @@ input {
     padding: 8px 5px !important;
     font-family: 'Roboto';
     font-style: normal;
-    // font-weight: 500; // read weight
-    font-weight: 400;
+    font-weight: 500;
+    // font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #8C8888;
@@ -5220,9 +5221,8 @@ operating performance css start
 */
 .operating_performance {
     height: auto;
-    min-height: 552px;
+    min-height: 100px;
     margin-top: 40px;
-    margin-bottom: 300px;
 
     .operating_performance__wrapper {
         background: var(--p_color_four);
@@ -5230,27 +5230,42 @@ operating performance css start
         border-radius: 15px;
         padding: 30px 25px;
 
-        .operating_performance__body{
+        .operating_performance__body {
             margin-top: 35px;
 
-            table{
+            table {
                 .name_container {
                     width: 300px;
                 }
 
-                tbody{
-                    tr{
-                        td{
+                tbody {
+                    tr {
+                        td {
                             position: relative;
-                            img{
+
+                            img {
                                 cursor: pointer !important;
                                 position: absolute;
                                 left: 10%;
                             }
                         }
                     }
+
+                    .tr_color_two {
+                        border: 1px solid var(--p_color_four);
+                    }
+
+                    .toggler {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #084266;
+                    }
                 }
             }
+
         }
     }
 }
@@ -5259,6 +5274,137 @@ operating performance css start
 /*
 operating performance css end
 */
+
+
+/*
+comapny detail dividend css start
+*/
+.company_detail_dividend {
+    height: 458px;
+    margin-top: 40px;
+
+    .company_detail_dividend__wrapper {
+        background: var(--p_color_four);
+
+        .company_detail_dividend__body {
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            // background-color: pink !important;
+            padding: 30px 40px;
+            border-radius: 15px;
+            position: relative;
+            margin-bottom: 10px;
+
+            .table_space {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}
+
+/*
+comapny detail dividend css end
+*/
+
+
+/*
+owenership and executives css start
+*/
+.executives {
+    height: auto;
+    min-height: 446px;
+    margin-top: 40px;
+    margin-bottom: 300px;
+
+    .executives__wrapper {
+        background: var(--p_color_four);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 30px 17px;
+        position: relative;
+        
+        .executives__wrapper_body{
+            // background-color: pink !important;
+            margin-bottom: 16px;
+            margin-top: 30px;
+
+            .nav-link.active{
+                // border-bottom: 1px solid red !important;
+                border-bottom: 2px solid var(--button_color) !important;
+            }
+
+            .ownership_executives_table{
+                margin-top: 15px !important;
+
+                .executive_tab_content{
+                    margin-top: 39px;
+                }
+            }
+
+            .executive_ownership_nav-tabs{
+                display: flex;
+                justify-content: space-between;
+                width: 20%;
+            }
+
+            .executives_nav_tabs{
+                display: flex;
+                column-gap: 46px;
+                border-bottom: 0px !important;
+                justify-content: end;
+
+
+                .nav-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    height: 22px;
+                    width: 151px;
+                    background: var(--p_color_four);
+                    border: 0.5px solid #BBB8B8;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    cursor: pointer;
+                
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: #032032;
+                    transition: all 500ms ease-in-out;
+                }
+                .nav-link.active{
+                    height: 22px;
+                    width: 151px;
+                    background: #032032;
+                    border: 0.5px solid #032032;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px;
+                
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: var(--p_color_four);
+                    cursor: pointer;
+                    transition: all 500ms ease-in-out;
+                }
+
+
+            }
+        }
+    }
+}
+
+/*
+owenership and executives css end
+*/
+
 
 
 

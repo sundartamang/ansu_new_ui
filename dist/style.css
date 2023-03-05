@@ -483,7 +483,7 @@ input:focus {
   padding: 8px 5px !important;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: #8C8888;
@@ -3925,9 +3925,8 @@ operating performance css start
 */
 .operating_performance {
   height: auto;
-  min-height: 552px;
+  min-height: 100px;
   margin-top: 40px;
-  margin-bottom: 300px;
 }
 .operating_performance .operating_performance__wrapper {
   background: var(--p_color_four);
@@ -3949,9 +3948,126 @@ operating performance css start
   position: absolute;
   left: 10%;
 }
+.operating_performance .operating_performance__wrapper .operating_performance__body table tbody .tr_color_two {
+  border: 1px solid var(--p_color_four);
+}
+.operating_performance .operating_performance__wrapper .operating_performance__body table tbody .toggler {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #084266;
+}
 
 /*
 operating performance css end
+*/
+/*
+comapny detail dividend css start
+*/
+.company_detail_dividend {
+  height: 458px;
+  margin-top: 40px;
+}
+.company_detail_dividend .company_detail_dividend__wrapper {
+  background: var(--p_color_four);
+}
+.company_detail_dividend .company_detail_dividend__wrapper .company_detail_dividend__body {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.company_detail_dividend .company_detail_dividend__wrapper .company_detail_dividend__body .table_space {
+  margin-bottom: 20px;
+}
+
+/*
+comapny detail dividend css end
+*/
+/*
+owenership and executives css start
+*/
+.executives {
+  height: auto;
+  min-height: 446px;
+  margin-top: 40px;
+  margin-bottom: 300px;
+}
+.executives .executives__wrapper {
+  background: var(--p_color_four);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px 17px;
+  position: relative;
+}
+.executives .executives__wrapper .executives__wrapper_body {
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+.executives .executives__wrapper .executives__wrapper_body .nav-link.active {
+  border-bottom: 2px solid var(--button_color) !important;
+}
+.executives .executives__wrapper .executives__wrapper_body .ownership_executives_table {
+  margin-top: 15px !important;
+}
+.executives .executives__wrapper .executives__wrapper_body .ownership_executives_table .executive_tab_content {
+  margin-top: 39px;
+}
+.executives .executives__wrapper .executives__wrapper_body .executive_ownership_nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.executives .executives__wrapper .executives__wrapper_body .executives_nav_tabs {
+  display: flex;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
+  border-bottom: 0px !important;
+  justify-content: end;
+}
+.executives .executives__wrapper .executives__wrapper_body .executives_nav_tabs .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  width: 151px;
+  background: var(--p_color_four);
+  border: 0.5px solid #BBB8B8;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #032032;
+  transition: all 500ms ease-in-out;
+}
+.executives .executives__wrapper .executives__wrapper_body .executives_nav_tabs .nav-link.active {
+  height: 22px;
+  width: 151px;
+  background: #032032;
+  border: 0.5px solid #032032;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+/*
+owenership and executives css end
 */
 /*********************************company page css end *********************************************************/
 /*********************************view full sheet css start*********************************************************/
