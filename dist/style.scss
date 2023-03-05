@@ -508,6 +508,14 @@ input {
     color: #8C8888;
 }
 
+// .td_space:hover{
+//     background-color: purple !important;
+// }
+
+.tr_hover:hover{
+    background-color: rgba(0,0,0,.075);
+}
+
 
 .owl-item {
     cursor: pointer;
@@ -1129,6 +1137,7 @@ header css start
             width: 100%;
             right: 0;
             left: 0;
+            bottom: 0;
             z-index: 1000;
             display: flex;
 
@@ -1155,19 +1164,11 @@ header css start
             }
 
             .header__responsive_menu_more {
-                // position: absolute;
-                // top: -800px;
-                // left: 0;
-                // right: 0;
-                // display: flex;
-                // flex-direction: column;
-                // background-color: #f9faff;
-                // transition: all .50s ease-in-out;
-                // text-align: left;
-
                 transition: all .50s ease;
                 position: absolute;
-                top: 100%;
+                // top: 100%;
+                // bottom: -990px;
+                bottom: 100%;
                 right: -900px;
                 width: 350px;
                 height: 50vh;
@@ -1175,12 +1176,13 @@ header css start
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 40px;
+                padding: 0px 40px;
 
                 ul li {
                     display: block;
                     font-size: 22px;
                     margin: 8px 0px;
+                    text-align: center;
                 }
 
 
@@ -1195,6 +1197,7 @@ header css start
 
             .header__responsive_menu_more.active {
                 right: 0;
+                // bottom: 0;
             }
         }
     }
@@ -1202,7 +1205,7 @@ header css start
     // custom jumbotron padding increased when height increase
     .custom_jumbotron {
         height: 356px !important;
-        padding-top: 92px;
+        // padding-top: 92px;
     }
 }
 
@@ -5343,7 +5346,7 @@ owenership and executives css start
             .executive_ownership_nav-tabs {
                 display: flex;
                 justify-content: space-between;
-                width: 20%;
+                width: 40%;
             }
 
             .executives_nav_tabs {
@@ -5429,7 +5432,7 @@ company detail news alert start
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
 
-            .company_detail_corporate__body{
+            .company_detail_corporate__body {
                 margin-top: 20px;
             }
         }
@@ -5442,7 +5445,7 @@ company detail news alert start
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
 
-            .company_detail_news__body{
+            .company_detail_news__body {
                 margin-top: 20px;
             }
         }
@@ -5455,7 +5458,7 @@ company detail news alert start
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
 
-            .company_detail_alerts__body{
+            .company_detail_alerts__body {
                 margin-top: 20px;
             }
         }
@@ -5492,18 +5495,31 @@ view full sheet section css start
 
 
         .view_full_sheet__header {
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            // display: flex;
+            // justify-content: end;
+            // align-items: center;
             column-gap: 30px;
             padding: 15px;
             height: 70px;
             // background-color: purple;
+            display: flex;
+            justify-content: space-between;
+
+            .view_full_sheet__header_left {
+                display: flex;
+                column-gap: 5px;
+            }
+
+            .view_full_sheet__header_right{
+                display: flex;
+                column-gap: 5px;
+            }
         }
 
         .view_full_sheet__body {
             // background-color: orange;
             padding: 0px 15px;
+            padding-bottom: 30px !important;
 
             .view_full_sheet__table {
                 height: 100%;
@@ -5514,6 +5530,9 @@ view full sheet section css start
                     tr {
                         border-bottom: 1px solid #D9D8D8;
                     }
+                }
+                tbody{
+                    padding-bottom: 30px !important;
                 }
 
                 tr {
@@ -5527,16 +5546,12 @@ view full sheet section css start
                         width: 300px;
                     }
                 }
+
             }
         }
 
         .view_full_sheet__footer {
-            display: flex;
-            justify-content: end;
-            align-items: flex-end;
-            column-gap: 5px;
-            padding: 15px;
-            height: 103px;
+
             // background-color: green;
         }
     }
