@@ -5314,7 +5314,6 @@ owenership and executives css start
     height: auto;
     min-height: 446px;
     margin-top: 40px;
-    margin-bottom: 300px;
 
     .executives__wrapper {
         background: var(--p_color_four);
@@ -5322,39 +5321,39 @@ owenership and executives css start
         border-radius: 15px;
         padding: 30px 17px;
         position: relative;
-        
-        .executives__wrapper_body{
+
+        .executives__wrapper_body {
             // background-color: pink !important;
             margin-bottom: 16px;
             margin-top: 30px;
 
-            .nav-link.active{
+            .nav-link.active {
                 // border-bottom: 1px solid red !important;
                 border-bottom: 2px solid var(--button_color) !important;
             }
 
-            .ownership_executives_table{
+            .ownership_executives_table {
                 margin-top: 15px !important;
 
-                .executive_tab_content{
+                .executive_tab_content {
                     margin-top: 39px;
                 }
             }
 
-            .executive_ownership_nav-tabs{
+            .executive_ownership_nav-tabs {
                 display: flex;
                 justify-content: space-between;
                 width: 20%;
             }
 
-            .executives_nav_tabs{
+            .executives_nav_tabs {
                 display: flex;
                 column-gap: 46px;
                 border-bottom: 0px !important;
                 justify-content: end;
 
 
-                .nav-link{
+                .nav-link {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -5366,7 +5365,7 @@ owenership and executives css start
                     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
                     border-radius: 5px;
                     cursor: pointer;
-                
+
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 600;
@@ -5376,14 +5375,15 @@ owenership and executives css start
                     color: #032032;
                     transition: all 500ms ease-in-out;
                 }
-                .nav-link.active{
+
+                .nav-link.active {
                     height: 22px;
                     width: 151px;
                     background: #032032;
                     border: 0.5px solid #032032;
                     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
                     border-radius: 5px;
-                
+
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 600;
@@ -5405,6 +5405,66 @@ owenership and executives css start
 owenership and executives css end
 */
 
+
+/*
+company detail news alert start
+*/
+.company_detail_new {
+    height: auto;
+    min-height: 443px;
+    // margin-bottom: 38px;
+    margin: 40px 0px;
+
+    .company_detail_new__wrapper {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+
+        .company_detail_corporate {
+            padding: 10px 25px;
+            height: auto;
+            min-height: 443px;
+            background: var(--p_color_four);
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+
+            .company_detail_corporate__body{
+                margin-top: 20px;
+            }
+        }
+
+        .company_detail_news {
+            padding: 10px 25px;
+            height: auto;
+            min-height: 443px;
+            background: var(--p_color_four);
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+
+            .company_detail_news__body{
+                margin-top: 20px;
+            }
+        }
+
+        .company_detail_alerts {
+            padding: 10px 25px;
+            height: auto;
+            min-height: 443px;
+            background: var(--p_color_four);
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+
+            .company_detail_alerts__body{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/*
+company detail news alert end
+*/
 
 
 
