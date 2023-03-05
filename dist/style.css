@@ -348,7 +348,7 @@ input:focus {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.09em;
@@ -4094,6 +4094,7 @@ company detail news alert start
   background: var(--p_color_four);
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  position: relative;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_corporate .company_detail_corporate__body {
   margin-top: 20px;
@@ -4105,6 +4106,7 @@ company detail news alert start
   background: var(--p_color_four);
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  position: relative;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_news .company_detail_news__body {
   margin-top: 20px;
@@ -4116,9 +4118,37 @@ company detail news alert start
   background: var(--p_color_four);
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  position: relative;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_alerts .company_detail_alerts__body {
   margin-top: 20px;
+}
+.company_detail_new .company_detail_new__wrapper .company_detail_alert {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-left: 3px solid #0A0955;
+  align-items: center;
+  padding: 12px 6px;
+  margin-bottom: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background: #FDFDFD;
+}
+.company_detail_new .company_detail_new__wrapper .company_detail_alert .company_detail_alert__left {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 18px;
+  color: #777373 !important;
+}
+.company_detail_new .company_detail_new__wrapper .company_detail_alert .company_detail_alert__right {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.5rem;
+  line-height: 12px;
+  color: #5B5959;
 }
 
 /*
