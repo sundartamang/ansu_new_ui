@@ -5434,13 +5434,18 @@ company detail news alert start
             border-radius: 15px;
             position: relative;
 
+            .company_detail_corporate__header {
+                // background-color: #08842b !important;
+            }
+
             .company_detail_corporate__body {
                 margin-top: 20px;
+                // background-color: purple !important;
             }
         }
 
         .company_detail_news {
-            padding: 10px 25px;
+
             height: auto;
             min-height: 443px;
             background: var(--p_color_four);
@@ -5448,13 +5453,85 @@ company detail news alert start
             border-radius: 15px;
             position: relative;
 
+            .company_detail_news__header {
+                // background-color: #08842b !important;
+                margin: 0px 25px;
+                margin-top: 10px;
+            }
+
             .company_detail_news__body {
                 margin-top: 20px;
+                padding: 0px 11px;
+                padding-bottom: 15px;
+                display: grid;
+                column-gap: 10px;
+                row-gap: 15px;
+                grid-template-columns: 2fr 2fr;
+                margin-bottom: 17px;
+
+                .company_detail_card {
+                    // height: 114px;
+                    background: #FDFDFD;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+                    .company_detail_card__header {
+                        img {
+                            // height: auto;
+                            // min-height: 54px;
+                            height: 54px;
+                            width: 100%;
+                        }
+                    }
+
+                    .company_detail_card__body {
+                        padding: 10px 9px;
+                        position: relative;
+
+                        h4 {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            // font-size: 10px;
+                            font-size: 0.625rem;
+                            line-height: 12px;
+                            color: #000000;
+                        }
+
+                        p {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            // font-size: 8px;
+                            font-size: 0.5rem;
+                            line-height: 12px;
+                            color: #706969;
+                        }
+
+                        button {
+                            background-color: var(--button_color);
+                            height: 25px;
+                            width: 23px;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 7px;
+                            bottom: 5px;
+
+                            i {
+                                color: var(--border_color);
+                                font-weight: 900;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
         .company_detail_alerts {
-            padding: 10px 25px;
+            // padding: 10px 25px;
             height: auto;
             min-height: 443px;
             background: var(--p_color_four);
@@ -5462,8 +5539,37 @@ company detail news alert start
             border-radius: 15px;
             position: relative;
 
+            .company_detail_alerts__header {
+                margin: 0px 25px;
+                margin-top: 10px;
+            }
+
             .company_detail_alerts__body {
                 margin-top: 20px;
+                padding: 0px 7px;
+
+                .company_detail_alert {
+                    border-left: 0px !important;
+                    padding: 12px;
+                    background: #FDFDFD;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1) !important;
+                    margin-bottom: 5px;
+
+                    .icon_wrapper {
+                        .fa_bell {
+                            color: #FFC700;
+                        }
+
+                        i {
+                            font-size: 18px;
+                            color: #D9D6D6;
+                        }
+
+                        .fa_bookmark {
+                            margin-right: 18px;
+                        }
+                    }
+                }
             }
         }
 
@@ -5477,7 +5583,7 @@ company detail news alert start
             margin-bottom: 5px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
             background: #FDFDFD;
-            
+
 
             .company_detail_alert__left {
                 font-family: 'Poppins';
