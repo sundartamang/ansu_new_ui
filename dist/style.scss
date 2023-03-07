@@ -4868,6 +4868,8 @@ company detail section css start
                             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
                             border-left: 3px solid #0A0955;
                             cursor: pointer;
+                            transition: all 500ms ease-in-out;
+                            opacity: 1;
 
                             p {
                                 font-family: 'Poppins';
@@ -4881,6 +4883,11 @@ company detail section css start
                                 display: flex;
                                 align-items: center;
                             }
+                        }
+                        .news_alert:hover{
+                            opacity: 0.9;
+                            transform: scale(1.001);
+                            font-size: 13px;
                         }
                     }
                 }
@@ -4949,44 +4956,97 @@ view sheet  section css start
                     column-gap: 30px;
                     padding: 10px 20px;
 
+                    .nav-tabs{
+                        column-gap: 30px;
+                        border: none !important;
+                    }
+
+                    .nav-link {
+                        height: 22px;
+                        width: 151px;
+                        background: var(--p_color_four);
+                        border: 0.5px solid #BBB8B8;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #032032;
+                        transition: all 500ms ease-in-out;
+                        opacity: 1;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .nav-link.active {
+                        height: 22px;
+                        width: 151px;
+                        background: #032032;
+                        border: 0.5px solid #032032;
+                        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                        border-radius: 5px;
+
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: var(--p_color_four);
+                        cursor: pointer;
+                        transition: all 500ms ease-in-out;
+                        opacity: 1;
+                    }
+
 
                 }
 
                 .viewsheet_tab__body {
-                    display: grid;
-                    grid-template-columns: 2.5fr 1.5fr;
-                    column-gap: 19px;
-                    margin-top: 36px;
 
 
-                    .viewsheet_table_wrapper {
-                        height: 260px;
-                        margin-left: 16px;
-                        background: #FFFFFF;
-                        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-                        border-radius: 3px;
-                        margin-bottom: 59px;
-
-                        .viewsheet_table {
-                            height: 100%;
-                            width: 100%;
-
-                            thead {
-                                tr {
-                                    border-bottom: 1px solid #D9D8D8;
-                                    background-color: var(--p_color_four);
+                    .viewsheet_tab__body_wrapper{
+                        display: grid;
+                        grid-template-columns: 2.5fr 1.5fr;
+                        column-gap: 19px;
+                        margin-top: 36px;
+                        
+                        .viewsheet_table_wrapper {
+                            height: 260px;
+                            margin-left: 16px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+                            border-radius: 3px;
+                            margin-bottom: 59px;
+    
+                            .viewsheet_table {
+                                height: 100%;
+                                width: 100%;
+    
+                                thead {
+                                    tr {
+                                        border-bottom: 1px solid #D9D8D8;
+                                        background-color: var(--p_color_four);
+                                    }
                                 }
                             }
                         }
+    
+                        .viewsheet_chart {
+                            height: 260px;
+                            background: #FEFEFE;
+                            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+                            border-radius: 5px;
+                            margin-right: 22px;
+                        }
                     }
 
-                    .viewsheet_chart {
-                        height: 260px;
-                        background: #FEFEFE;
-                        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-                        border-radius: 5px;
-                        margin-right: 22px;
-                    }
                 }
             }
         }
@@ -5337,7 +5397,8 @@ owenership and executives css start
             }
 
             .ownership_executives_table {
-                margin-top: 15px !important;
+                // margin-top: 15px !important;
+                margin-top: 30px !important;
 
                 .executive_tab_content {
                     margin-top: 39px;
@@ -5515,6 +5576,7 @@ company detail news alert start
                             position: absolute;
                             right: 7px;
                             bottom: 5px;
+                            transition: 600ms ease-in-out;
 
                             i {
                                 color: var(--border_color);
@@ -5524,6 +5586,10 @@ company detail news alert start
                                 align-items: center;
                                 font-size: 13px;
                             }
+                        }
+
+                        button:hover{
+                            background-color: #020d1b;
                         }
                     }
                 }
@@ -5583,6 +5649,7 @@ company detail news alert start
             margin-bottom: 5px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
             background: #FDFDFD;
+            transition: 600ms ease-in-out;
 
 
             .company_detail_alert__left {
@@ -5602,6 +5669,10 @@ company detail news alert start
                 line-height: 12px;
                 color: #5B5959;
             }
+        }
+        .company_detail_alert:hover{
+            cursor: pointer;
+            opacity: 0.9;
         }
     }
 }

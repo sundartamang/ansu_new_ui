@@ -3654,6 +3654,8 @@ company detail section css start
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-left: 3px solid #0A0955;
   cursor: pointer;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
 }
 .company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__research_wrapper .company_detail__research_body .news_alert p {
   font-family: "Poppins";
@@ -3666,6 +3668,11 @@ company detail section css start
   height: 100%;
   display: flex;
   align-items: center;
+}
+.company_detail .company_detail__wrapper .company_detail__body .company_detail__body_right .company_detail__research_wrapper .company_detail__research_body .news_alert:hover {
+  opacity: 0.9;
+  transform: scale(1.001);
+  font-size: 13px;
 }
 
 /*
@@ -3718,14 +3725,58 @@ view sheet  section css start
        column-gap: 30px;
   padding: 10px 20px;
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body {
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .nav-tabs {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  border: none !important;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .nav-link {
+  height: 22px;
+  width: 151px;
+  background: var(--p_color_four);
+  border: 0.5px solid #BBB8B8;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #032032;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__header .nav-link.active {
+  height: 22px;
+  width: 151px;
+  background: #032032;
+  border: 0.5px solid #032032;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--p_color_four);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+}
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_tab__body_wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
   -moz-column-gap: 19px;
        column-gap: 19px;
   margin-top: 36px;
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper {
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_tab__body_wrapper .viewsheet_table_wrapper {
   height: 260px;
   margin-left: 16px;
   background: #FFFFFF;
@@ -3733,15 +3784,15 @@ view sheet  section css start
   border-radius: 3px;
   margin-bottom: 59px;
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table {
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_tab__body_wrapper .viewsheet_table_wrapper .viewsheet_table {
   height: 100%;
   width: 100%;
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_table_wrapper .viewsheet_table thead tr {
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_tab__body_wrapper .viewsheet_table_wrapper .viewsheet_table thead tr {
   border-bottom: 1px solid #D9D8D8;
   background-color: var(--p_color_four);
 }
-.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_chart {
+.viewsheet .viewsheet_wrapper .viewsheet_wrapper__body .viewsheet_tab .viewsheet_tab__body .viewsheet_tab__body_wrapper .viewsheet_chart {
   height: 260px;
   background: #FEFEFE;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -4015,7 +4066,7 @@ owenership and executives css start
   border-bottom: 2px solid var(--button_color) !important;
 }
 .executives .executives__wrapper .executives__wrapper_body .ownership_executives_table {
-  margin-top: 15px !important;
+  margin-top: 30px !important;
 }
 .executives .executives__wrapper .executives__wrapper_body .ownership_executives_table .executive_tab_content {
   margin-top: 39px;
@@ -4158,6 +4209,7 @@ company detail news alert start
   position: absolute;
   right: 7px;
   bottom: 5px;
+  transition: 600ms ease-in-out;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_news .company_detail_news__body .company_detail_card .company_detail_card__body button i {
   color: var(--border_color);
@@ -4166,6 +4218,9 @@ company detail news alert start
   justify-content: center;
   align-items: center;
   font-size: 13px;
+}
+.company_detail_new .company_detail_new__wrapper .company_detail_news .company_detail_news__body .company_detail_card .company_detail_card__body button:hover {
+  background-color: #020d1b;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_alerts {
   height: auto;
@@ -4210,6 +4265,7 @@ company detail news alert start
   margin-bottom: 5px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   background: #FDFDFD;
+  transition: 600ms ease-in-out;
 }
 .company_detail_new .company_detail_new__wrapper .company_detail_alert .company_detail_alert__left {
   font-family: "Poppins";
@@ -4226,6 +4282,10 @@ company detail news alert start
   font-size: 0.5rem;
   line-height: 12px;
   color: #5B5959;
+}
+.company_detail_new .company_detail_new__wrapper .company_detail_alert:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 /*
