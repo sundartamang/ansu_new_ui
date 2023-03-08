@@ -58,6 +58,10 @@ a:active {
   text-decoration: none;
 }
 
+*:focus {
+  box-shadow: none !important;
+}
+
 button:focus {
   outline: none;
 }
@@ -382,6 +386,16 @@ input:focus {
   line-height: 14px;
   /* identical to box height */
   color: #818185;
+}
+
+.regular_text_eight {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  color: #7D7373;
 }
 
 .text_dark {
@@ -4351,4 +4365,144 @@ view full sheet section css start
 /*
 view full sheet section css end
 */
-/*********************************view full sheet css end*********************************************************//*# sourceMappingURL=style.css.map */
+/*********************************view full sheet css end*********************************************************/
+/*********************************Login section css start*********************************************************/
+.login_container {
+  height: auto;
+  min-height: 744px;
+  background: #E8F0FC;
+  padding-top: 30px;
+}
+.login_container .login_wrapper {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: auto;
+  min-height: 654px;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.login_container .login_wrapper .login_wrapper__left {
+  background-color: var(--p_color_four);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper {
+  width: 461px;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 45px;
+  color: var(--main_color_one);
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper p {
+  color: #9D9898 !important;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #C1B9B9 !important;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check {
+  display: flex;
+  justify-content: space-between;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .form_check_left {
+  display: flex;
+  align-items: center;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .form_check_left input {
+  bottom: 1px;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .form_check_right {
+  display: flex;
+  align-items: center;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .form_check_right span {
+  transition: all 700ms ease-in-out;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .form_check_right span:hover {
+  text-decoration: underline;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .form_check .forgor_password {
+  color: var(--main_color_one) !important;
+  cursor: pointer;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .btn {
+  height: 24px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn {
+  background: var(--main_color_one);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--p_color_four);
+  transition: all 300ms ease-in-out;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn:hover {
+  background: var(--main_color_one_hover);
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn_google {
+  background: var(--p_color_four);
+  border: 0.7px solid rgba(0, 0, 0, 0.2);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: #7A7A7A;
+  margin-top: 8px;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  opacity: 1;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn_google img {
+  margin: 3px 0px;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn_google:hover {
+  opacity: 0.7;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect {
+  margin-top: 1.1875rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 12px;
+  color: #7D7373;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect span {
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: #032033;
+  cursor: pointer;
+  transition: all 700ms ease-in-out;
+}
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect span:hover {
+  text-decoration: underline;
+}
+.login_container .login_wrapper .login_wrapper__right {
+  background: url("../img/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*********************************Login section css end*********************************************************//*# sourceMappingURL=style.css.map */
