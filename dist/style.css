@@ -4478,6 +4478,9 @@ view full sheet section css end
 .login_container .login_wrapper .login_wrapper__left .login_form_wrapper .login_btn_google:hover {
   opacity: 0.7;
 }
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .register_btn {
+  margin-top: 30px !important;
+}
 .login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect {
   margin-top: 1.1875rem;
   font-family: "Roboto";
@@ -4487,14 +4490,14 @@ view full sheet section css end
   line-height: 12px;
   color: #7D7373;
 }
-.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect span {
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect a {
   font-size: 0.75rem;
   line-height: 14px;
   color: #032033;
   cursor: pointer;
   transition: all 700ms ease-in-out;
 }
-.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect span:hover {
+.login_container .login_wrapper .login_wrapper__left .login_form_wrapper .redirect a:hover {
   text-decoration: underline;
 }
 .login_container .login_wrapper .login_wrapper__right {
@@ -4534,7 +4537,7 @@ view full sheet section css end
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
-  color: #000000;
+  color: #000000 !important;
 }
 .login_container .login_wrapper .login_wrapper__right .login_wrapper__slider .carousel-item h6 {
   font-family: "Roboto";
@@ -4542,7 +4545,7 @@ view full sheet section css end
   font-weight: 500;
   font-size: 15px;
   line-height: 30px;
-  color: #000000;
+  color: #000000 !important;
   margin-bottom: 0px !important;
 }
 .login_container .login_wrapper .login_wrapper__right .login_wrapper__slider .carousel-item p {

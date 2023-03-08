@@ -5928,6 +5928,10 @@ view full sheet section css end
                     opacity: 0.7;
                 }
 
+                .register_btn{
+                    margin-top: 30px !important;
+                }
+
                 .redirect {
                     margin-top: 1.1875rem;
                     font-family: 'Roboto';
@@ -5938,7 +5942,7 @@ view full sheet section css end
                     line-height: 12px;
                     color: #7D7373;
 
-                    span {
+                    a {
                         // font-size: 12px;
                         font-size: 0.75rem;
                         line-height: 14px;
@@ -5947,7 +5951,7 @@ view full sheet section css end
                         transition: all 700ms ease-in-out;
                     }
 
-                    span:hover {
+                    a:hover {
                         text-decoration: underline;
                     }
 
@@ -6004,7 +6008,7 @@ view full sheet section css end
                         font-weight: 500;
                         font-size: 22px;
                         line-height: 30px;
-                        color: #000000;
+                        color: #000000 !important;
                     }
 
                     h6 {
@@ -6013,7 +6017,7 @@ view full sheet section css end
                         font-weight: 500;
                         font-size: 15px;
                         line-height: 30px;
-                        color: #000000;
+                        color: #000000 !important;
                         margin-bottom: 0px !important;
                     }
 
