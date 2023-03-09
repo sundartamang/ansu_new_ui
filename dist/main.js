@@ -270,3 +270,24 @@ hide and show dorpdown profile menu js end
 
 //   // document.getElementById('collpaseTableRow').classList.add("visible");
 // }
+
+
+// for otp input go to next input when one character entered
+// $(".otp_input").keyup(function () {
+//   if (this.value.length == this.maxLength) {
+//     $(this).nextAll('.inputs:enabled:first').focus();
+//   }
+// });
+
+var elts = document.getElementsByClassName('otp_input')
+Array.from(elts).forEach(function(elt){
+  elt.addEventListener("keyup", function(event) {
+
+    console.log("----")
+    
+    if (event.keyCode === 13 || elt.value.length == 1) {
+
+      elt.nextElementSibling.focus()
+    }
+  });
+})
